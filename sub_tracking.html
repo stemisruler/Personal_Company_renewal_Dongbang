@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화물 추적</title>
+    
+    <!-- j query -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
+    <!-- DataTables JavaScript -->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+    <!-- xeicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <!-- pretendard -->
+    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/subpage-css/subpage-header.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/subpage-css/sub-common.css">
+    <link rel="stylesheet" href="css/subpage-css/tracking.css">
+    <link rel="stylesheet" href="css/subpage-css/datatable.css">
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <link rel="stylesheet" href="css/header-responsive.css">
+    <link rel="stylesheet" href="css/modal-responsive.css">
+    <link rel="stylesheet" href="css/footer-responsive.css">
+    
+
+</head>
+
+<body>
+    <!-- 사이트맵 모달 -->
+
+    <div id="modal-background"></div>
+    <div id="myModal" class="modal">
+        <h1>사이트맵</h1>
+        <span id="modal-quit">X</span>
+        <div class="modal-content">
+            <ul class="modal-menu">
+                <li>
+                    <a href="#none">회사소개</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li><a href="#none">CEO인사말</a></li>
+                                <li><a href="#none">동방이념</a></li>
+                                <li><a href="#none">동방연혁</a></li>
+                                <li><a href="#none">비전</a></li>
+                                <li><a href="#none">사업장현황</a></li>
+                                <li><a href="#none">장비현황</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">투자정보</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li> <a href="#none">공시정보</a></li>
+                                <li> <a href="#none">재무정보</a></li>
+                                <li> <a href="#none">IR담당자</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">주요사업</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li> <a href="#none">컨테이너</a></li>
+                                <li> <a href="#none">벌크</a></li>
+                                <li> <a href="#none">터미널</a></li>
+                                <li> <a href="#none">유통물류</a></li>
+                                <li> <a href="#none">철강</a></li>
+                                <li> <a href="#none">포워딩</a></li>
+                                <li> <a href="#none">해상풍력</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">동방웹진</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li> <a href="#none">칼럼</a></li>
+                                <li> <a href="#none">뉴스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">고객지원</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li> <a href="#none">고객지원</a></li>
+                                <li> <a href="#none">사이버신문고</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">채용정보</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li> <a href="#none">채용공고</a></li>
+                                <li> <a href="#none">인재상</a></li>
+                                <li> <a href="#none">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="header">
+        <a href="index.html" class="logo_link">
+            <img src="images/logos/dongbang_white_logo.png" alt="" class="header_logo_image"></a>
+        <div class="header-gnb">
+            <ul class="menu">
+                <li>
+                    <a href="#none">회사소개</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">CEO인사말</a></li>
+                                <li> <a href="#none">동방이념</a></li>
+                                <li> <a href="#none">동방연혁</a></li>
+                                <li> <a href="#none">비전</a></li>
+                                <li> <a href="#none">사업장현황</a></li>
+                                <li> <a href="#none">장비현황</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">투자정보</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">공시정보</a></li>
+                                <li> <a href="#none">재무정보</a></li>
+                                <li> <a href="#none">IR담당자</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">주요사업</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">컨테이너</a></li>
+                                <li> <a href="#none">벌크</a></li>
+                                <li> <a href="#none">터미널</a></li>
+                                <li> <a href="#none">유통물류</a></li>
+                                <li> <a href="#none">철강</a></li>
+                                <li> <a href="#none">포워딩</a></li>
+                                <li> <a href="#none">해상풍력</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">동방웹진</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">칼럼</a></li>
+                                <li> <a href="#none">뉴스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">고객지원</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">고객지원</a></li>
+                                <li> <a href="#none">사이버신문고</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">채용정보</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">채용공고</a></li>
+                                <li> <a href="#none">인재상</a></li>
+                                <li> <a href="#none">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 서브메뉴 바탕색용 div -->
+            <div class="sub-menu-bg"></div>
+        </div>
+        </div>
+        <div class="lang">
+            <a href="#none">ENG</a>
+            <span class="bar">&#124;</span>
+            <a href="#none">CN</a>
+        </div>
+        <div class="sitemap">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+
+    </header>
+    
+    <div class="sub-visual">
+        <div class="sub-main-image">
+            <img src="images/sub_main_image.jpg" alt="">
+        </div>    
+        <h1>QUICK MENU</h1>
+        <p>글로벌 물류 기업으로 도약하는 동방은 고객의 가치를 존중합니다.</p>
+    </div>
+    <div class="sub-visual-menu-bar">
+        <div class="inner sub-visual-menu-bar-container">
+            <ul>
+                <li><a href="sub_tracking.html" class="active2">화물 추적</a></li>
+                <li><a href="sub_service.html">서비스 신청</a></li>
+                <li><a href="#none">투자 정보</a></li>
+                <li><a href="#none">동방 웹진</a></li>
+                <li><a href="#none">최신 뉴스</a></li>
+                <li><a href="#none">채용 공고</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="inner sub-bar">
+        <h3>화물 추적</h3>
+        <ul>
+            <li><a href="index.html"><i class="xi-home"></i></a></li>
+            <span class="right-arrow">></span>
+            <li><a href="#"><span>자주 찾는 메뉴</span></a></li>
+            <span class="right-arrow">></span>
+            <li><a href="#"><span>화물 추적</span></a></li>
+        </ul>
+    </div>
+<!-- sub visual 끝 -->
+<main class="main-tracking">
+    <div class="radio-box">
+        <input type="radio" value="BlNo" name="radio-name2" id="radio-1" checked="">
+        <label for="radio-1">B/L No.</label>
+        <input type="radio" value="CntNo" name="radio-name2" id="radio-2">
+        <label for="radio-2">Container No.</label>
+        <input type="radio" value="BkgNo" name="radio-name2" id="radio-3">
+        <label for="radio-3">Booking No.</label>
+        <input type="radio" value="PoNo" name="radio-name2" id="radio-4">
+        <label for="radio-4">P/O No.</label>
+    </div>
+</main>
+<section class="search-form-section">
+    <form id="myForm" autocomplete="off">
+        <div class="inputs-wrap width-center">
+            <input required type="text" id="myInput">
+        </div>
+        <div  class="search-btn"><button type="submit" class="retreve">Search</button></div>
+    </form>
+    <table id="tableA" class="tables">
+        <thead>
+            <tr>
+                <th>Tracking Number</th>
+                <th>Origin</th>
+                <th>Destination</th>
+                <th>Dispatch Time</th>
+                <th>Estimated Arrival</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Tokyo, Japan</td>
+                <td>Seoul, South Korea</td>
+                <td>July 23, 2023, 14:00</td>
+                <td>July 24, 2023, 16:00</td>
+                <td>In Transit</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Maseru, Lesotho</td>
+                <td>Johannesburg, South Africa</td>
+                <td>July 23, 2023, 08:00</td>
+                <td>July 24, 2023, 14:00</td>
+                <td>Arrived at Hub</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>New York, USA</td>
+                <td>London, UK</td>
+                <td>July 22, 2023, 18:00</td>
+                <td>July 23, 2023, 20:00</td>
+                <td>Delivered</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Beijing, China</td>
+                <td>Tokyo, Japan</td>
+                <td>July 24, 2023, 11:00</td>
+                <td>July 24, 2023, 16:00</td>
+                <td>In Transit</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Paris, France</td>
+                <td>Berlin, Germany</td>
+                <td>July 24, 2023, 09:00</td>
+                <td>July 24, 2023, 13:00</td>
+                <td>Arrived at Hub</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Sydney, Australia</td>
+                <td>Wellington, New Zealand</td>
+                <td>July 23, 2023, 10:00</td>
+                <td>July 23, 2023, 16:00</td>
+                <td>Delivered</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Rome, Italy</td>
+                <td>Madrid, Spain</td>
+                <td>July 24, 2023, 09:00</td>
+                <td>July 24, 2023, 21:00</td>
+                <td>In Transit</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Delhi, India</td>
+                <td>Mumbai, India</td>
+                <td>July 24, 2023, 06:00</td>
+                <td>July 24, 2023, 14:00</td>
+                <td>Arrived at Hub</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Rio de Janeiro, Brazil</td>
+                <td>Sao Paulo, Brazil</td>
+                <td>July 24, 2023, 10:00</td>
+                <td>July 24, 2023, 16:00</td>
+                <td>Out for Delivery</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Moscow, Russia</td>
+                <td>St. Petersburg, Russia</td>
+                <td>July 24, 2023, 08:00</td>
+                <td>July 24, 2023, 18:00</td>
+                <td>In Transit</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Cape Town, South Africa</td>
+                <td>Johannesburg, South Africa</td>
+                <td>July 24, 2023, 07:00</td>
+                <td>July 24, 2023, 19:00</td>
+                <td>Delivered</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Toronto, Canada</td>
+                <td>Vancouver, Canada</td>
+                <td>July 24, 2023, 09:00</td>
+                <td>July 25, 2023, 07:00</td>
+                <td>In Transit</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="tableB" class="tables">
+        <thead>
+            <tr>
+                <th>Tracking Number</th>
+                <th>Origin</th>
+                <th>Destination</th>
+                <th>Dispatch Time</th>
+                <th>Estimated Arrival</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Seoul</td>
+                <td>New York</td>
+                <td>July 24, 2023, 15:30</td>
+                <td>July 30, 2023, 22:00</td>
+                <td>In Transit</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tokyo</td>
+                <td>London</td>
+                <td>July 23, 2023, 12:45</td>
+                <td>July 29, 2023, 20:15</td>
+                <td>In Transit</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Beijing</td>
+                <td>Paris</td>
+                <td>July 22, 2023, 16:20</td>
+                <td>July 28, 2023, 21:30</td>
+                <td>Arrived</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Moscow</td>
+                <td>Sydney</td>
+                <td>July 21, 2023, 11:00</td>
+                <td>July 27, 2023, 18:45</td>
+                <td>In Transit</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Los Angeles</td>
+                <td>Rome</td>
+                <td>July 20, 2023, 14:30</td>
+                <td>July 26, 2023, 19:20</td>
+                <td>Arrived</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>London</td>
+                <td>Mumbai</td>
+                <td>July 19, 2023, 17:45</td>
+                <td>July 25, 2023, 23:15</td>
+                <td>In Transit</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Singapore</td>
+                <td>Toronto</td>
+                <td>July 18, 2023, 16:00</td>
+                <td>July 24, 2023, 20:30</td>
+                <td>In Transit</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Madrid</td>
+                <td>Dubai</td>
+                <td>July 17, 2023, 19:30</td>
+                <td>July 23, 2023, 01:45</td>
+                <td>Arrived</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Paris</td>
+                <td>Singapore</td>
+                <td>July 16, 2023, 10:15</td>
+                <td>July 22, 2023, 16:30</td>
+                <td>Arrived</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Sydney</td>
+                <td>Beijing</td>
+                <td>July 15, 2023, 12:00</td>
+                <td>July 21, 2023, 15:45</td>
+                <td>Arrived</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Sydney</td>
+                <td>Beijing</td>
+                <td>July 15, 2023, 12:00</td>
+                <td>July 21, 2023, 15:45</td>
+                <td>Arrived</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Sydney</td>
+                <td>Beijing</td>
+                <td>July 15, 2023, 12:00</td>
+                <td>July 21, 2023, 15:45</td>
+                <td>Arrived</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Sydney</td>
+                <td>Beijing</td>
+                <td>July 15, 2023, 12:00</td>
+                <td>July 21, 2023, 15:45</td>
+                <td>Arrived</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Sydney</td>
+                <td>Beijing</td>
+                <td>July 15, 2023, 12:00</td>
+                <td>July 21, 2023, 15:45</td>
+                <td>Arrived</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Sydney</td>
+                <td>Beijing</td>
+                <td>July 15, 2023, 12:00</td>
+                <td>July 21, 2023, 15:45</td>
+                <td>Arrived</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Sydney</td>
+                <td>Beijing</td>
+                <td>July 15, 2023, 12:00</td>
+                <td>July 21, 2023, 15:45</td>
+                <td>Arrived</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>London</td>
+                <td>Rome</td>
+                <td>July 14, 2023, 14:00</td>
+                <td>July 20, 2023, 20:00</td>
+                <td>In Transit</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Toronto</td>
+                <td>Singapore</td>
+                <td>July 13, 2023, 13:45</td>
+                <td>July 19, 2023, 19:30</td>
+                <td>In Transit</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Beijing</td>
+                <td>New York</td>
+                <td>July 12, 2023, 16:00</td>
+                <td>July 18, 2023, 22:00</td>
+                <td>Arrived</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Sydney</td>
+                <td>Moscow</td>
+                <td>July 11, 2023, 17:30</td>
+                <td>July 17, 2023, 23:15</td>
+                <td>In Transit</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Madrid</td>
+                <td>Tokyo</td>
+                <td>July 10, 2023, 11:00</td>
+                <td>July 16, 2023, 16:45</td>
+                <td>Arrived</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="tableC" class="tables">
+        <thead>
+            <tr>
+                <th>Tracking Number</th>
+                <th>Origin</th>
+                <th>Destination</th>
+                <th>Dispatch Time</th>
+                <th>Estimated Arrival</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Seoul</td>
+                    <td>New York</td>
+                    <td>July 24, 2023, 15:30</td>
+                    <td>July 30, 2023, 22:00</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tokyo</td>
+                    <td>London</td>
+                    <td>July 23, 2023, 12:45</td>
+                    <td>July 29, 2023, 20:15</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Beijing</td>
+                    <td>Paris</td>
+                    <td>July 22, 2023, 16:20</td>
+                    <td>July 28, 2023, 21:30</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Moscow</td>
+                    <td>Sydney</td>
+                    <td>July 21, 2023, 11:00</td>
+                    <td>July 27, 2023, 18:45</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Los Angeles</td>
+                    <td>Rome</td>
+                    <td>July 20, 2023, 14:30</td>
+                    <td>July 26, 2023, 19:20</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>London</td>
+                    <td>Mumbai</td>
+                    <td>July 19, 2023, 17:45</td>
+                    <td>July 25, 2023, 23:15</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Singapore</td>
+                    <td>Toronto</td>
+                    <td>July 18, 2023, 16:00</td>
+                    <td>July 24, 2023, 20:30</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Madrid</td>
+                    <td>Dubai</td>
+                    <td>July 17, 2023, 19:30</td>
+                    <td>July 23, 2023, 01:45</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Paris</td>
+                    <td>Singapore</td>
+                    <td>July 16, 2023, 10:15</td>
+                    <td>July 22, 2023, 16:30</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Sydney</td>
+                    <td>Beijing</td>
+                    <td>July 15, 2023, 12:00</td>
+                    <td>July 21, 2023, 15:45</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>London</td>
+                    <td>Rome</td>
+                    <td>July 14, 2023, 14:00</td>
+                    <td>July 20, 2023, 20:00</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Toronto</td>
+                    <td>Singapore</td>
+                    <td>July 13, 2023, 13:45</td>
+                    <td>July 19, 2023, 19:30</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Beijing</td>
+                    <td>New York</td>
+                    <td>July 12, 2023, 16:00</td>
+                    <td>July 18, 2023, 22:00</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Sydney</td>
+                    <td>Moscow</td>
+                    <td>July 11, 2023, 17:30</td>
+                    <td>July 17, 2023, 23:15</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Madrid</td>
+                    <td>Tokyo</td>
+                    <td>July 10, 2023, 11:00</td>
+                    <td>July 16, 2023, 16:45</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Beijing</td>
+                    <td>London</td>
+                    <td>July 9, 2023, 11:15</td>
+                    <td>July 14, 2023, 19:00</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Los Angeles</td>
+                    <td>Paris</td>
+                    <td>July 10, 2023, 12:30</td>
+                    <td>July 16, 2023, 20:00</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Paris</td>
+                    <td>Los Angeles</td>
+                    <td>July 11, 2023, 14:15</td>
+                    <td>July 17, 2023, 21:45</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>New York</td>
+                    <td>Beijing</td>
+                    <td>July 12, 2023, 08:30</td>
+                    <td>July 18, 2023, 16:00</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Beijing</td>
+                    <td>New York</td>
+                    <td>July 13, 2023, 09:45</td>
+                    <td>July 19, 2023, 17:15</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>London</td>
+                    <td>Seoul</td>
+                    <td>July 14, 2023, 10:00</td>
+                    <td>July 20, 2023, 18:30</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Seoul</td>
+                    <td>London</td>
+                    <td>July 15, 2023, 11:15</td>
+                    <td>July 21, 2023, 19:45</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Seoul</td>
+                    <td>London</td>
+                    <td>July 15, 2023, 11:15</td>
+                    <td>July 21, 2023, 19:45</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Seoul</td>
+                    <td>London</td>
+                    <td>July 15, 2023, 11:15</td>
+                    <td>July 21, 2023, 19:45</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Seoul</td>
+                    <td>London</td>
+                    <td>July 15, 2023, 11:15</td>
+                    <td>July 21, 2023, 19:45</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Seoul</td>
+                    <td>London</td>
+                    <td>July 15, 2023, 11:15</td>
+                    <td>July 21, 2023, 19:45</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Seoul</td>
+                    <td>London</td>
+                    <td>July 15, 2023, 11:15</td>
+                    <td>July 21, 2023, 19:45</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Seoul</td>
+                    <td>London</td>
+                    <td>July 15, 2023, 11:15</td>
+                    <td>July 21, 2023, 19:45</td>
+                    <td>Arrived</td>
+                </tr>
+
+                <tr>
+                    <td>22</td>
+                    <td>Paris</td>
+                    <td>Singapore</td>
+                    <td>July 16, 2023, 12:30</td>
+                    <td>July 22, 2023, 21:00</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>Singapore</td>
+                    <td>Paris</td>
+                    <td>July 17, 2023, 13:45</td>
+                    <td>July 23, 2023, 22:15</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>Los Angeles</td>
+                    <td>Tokyo</td>
+                    <td>July 18, 2023, 15:00</td>
+                    <td>July 24, 2023, 23:30</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Tokyo</td>
+                    <td>Los Angeles</td>
+                    <td>July 19, 2023, 16:15</td>
+                    <td>July 25, 2023, 24:45</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>New York</td>
+                    <td>Moscow</td>
+                    <td>July 20, 2023, 17:30</td>
+                    <td>July 26, 2023, 02:00</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>Moscow</td>
+                    <td>New York</td>
+                    <td>July 21, 2023, 18:45</td>
+                    <td>July 27, 2023, 03:15</td>
+                    <td>Arrived</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>Beijing</td>
+                    <td>Los Angeles</td>
+                    <td>July 22, 2023, 20:00</td>
+                    <td>July 28, 2023, 04:30</td>
+                    <td>In Transit</td>
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td>Los Angeles</td>
+                    <td>Beijing</td>
+                    <td>July 23, 2023, 21:15</td>
+                    <td>July 29, 2023, 05:45</td>
+                    <td>Arrived</td>
+                </tr>                
+                <tr>
+                    <td>37</td>
+                    <td>Seoul</td>
+                    <td>Tokyo</td>
+                    <td>July 24, 2023, 14:00</td>
+                    <td>July 25, 2023, 20:00</td>
+                    <td>In Transit</td>
+                </tr>         
+        </tbody>
+    </table>
+
+
+</section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="inner footer-inner">
+            <div class="footer-logo">
+                <img src="images/logos/dongbang_color_logo.png" alt="">
+            </div>
+            <div class="info">
+                <p>&#40;주&#41;동방 서울특별시 중구 통일로 2길 16 AIA타워 3층<br>
+                    대표전화 : &#91;영업대표&#93; 02&#45;2190&#45;8300<br>
+                    &#91;경영지원&#93;02&#45;2190&#45;8100</p>
+                <span class="small-copy">Copyright &copy; Dongbang Transport Logistics Co., Ltd All rights
+                    reserved.</span>
+            </div>
+            <div class="other-info">
+                <a href="#none">회사소개</a>
+                <span class="bar2">&#124;</span>
+                <a href="#none">투자정보</a>
+            </div>
+            <div class="family-site">
+                <select id="family-sites" onchange="location = this.value;">
+                    <option value="">Family Site</option>
+                    <option value="https://example1.com">동방물류</option>
+                    <option value="https://example2.com">동방철강</option>
+                    <option value="https://example3.com">동방웹진</option>
+                    <option value="https://example4.com">동방에스엔디</option>
+                    <option value="https://example5.com">동방로지스틱스</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+    <script src="js/header.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/modal-accordion.js"></script>
+    <script src="js/sub-js/datatable.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/page-icon.png" type="image/png">
+    
+    <title>(주)동방</title>
+    <!-- swipe css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- j query -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
+    <link rel="stylesheet" href="css/reset.css">    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/company-locatin.css">
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <link rel="stylesheet" href="css/header-responsive.css">
+    <link rel="stylesheet" href="css/modal-responsive.css">
+    <link rel="stylesheet" href="css/quick-menu-responsive.css">
+    <link rel="stylesheet" href="css/section1-responsive.css">
+    <link rel="stylesheet" href="css/section2-responsive.css">
+    <link rel="stylesheet" href="css/section3-responsive.css">
+    <link rel="stylesheet" href="css/section4-responsive.css">
+    <link rel="stylesheet" href="css/company-location-responsive.css">
+    <link rel="stylesheet" href="css/footer-responsive.css">
+
+</head>
+
+<body>
+    <!-- 사이트맵 모달 -->
+
+    <div id="modal-background"></div>
+    <div id="myModal" class="modal">
+        <h1>사이트맵</h1>
+        <span id="modal-quit">X</span>
+        <div class="modal-content">
+            <ul class="modal-menu">
+                <li>
+                    <a href="#none">회사소개</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li><a href="#none">CEO인사말</a></li>
+                                <li><a href="#none">동방이념</a></li>
+                                <li><a href="#none">동방연혁</a></li>
+                                <li><a href="#none">비전</a></li>
+                                <li><a href="#none">사업장현황</a></li>
+                                <li><a href="#none">장비현황</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">투자정보</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li> <a href="#none">공시정보</a></li>
+                                <li> <a href="#none">재무정보</a></li>
+                                <li> <a href="#none">IR담당자</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">주요사업</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li> <a href="#none">컨테이너</a></li>
+                                <li> <a href="#none">벌크</a></li>
+                                <li> <a href="#none">터미널</a></li>
+                                <li> <a href="#none">유통물류</a></li>
+                                <li> <a href="#none">철강</a></li>
+                                <li> <a href="#none">포워딩</a></li>
+                                <li> <a href="#none">해상풍력</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">동방웹진</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li> <a href="#none">칼럼</a></li>
+                                <li> <a href="#none">뉴스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">고객지원</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li> <a href="#none">고객지원</a></li>
+                                <li> <a href="#none">사이버신문고</a></li>            
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">채용정보</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li> <a href="#none">채용공고</a></li>
+                                <li> <a href="#none">인재상</a></li>
+                                <li> <a href="#none">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="header">
+        <a href="index.html" class="logo_link">
+            <img src="images/logos/dongbang_white_logo.png" alt="" class="header_logo_image"></a>
+        <div class="header-gnb">
+            <ul class="menu">
+                <li>
+                    <a href="#none">회사소개</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">CEO인사말</a></li>
+                                <li> <a href="#none">동방이념</a></li>
+                                <li> <a href="#none">동방연혁</a></li>
+                                <li> <a href="#none">비전</a></li>
+                                <li> <a href="#none">사업장현황</a></li>
+                                <li> <a href="#none">장비현황</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">투자정보</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">공시정보</a></li>
+                                <li> <a href="#none">재무정보</a></li>
+                                <li> <a href="#none">IR담당자</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">주요사업</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">컨테이너</a></li>
+                                <li> <a href="#none">벌크</a></li>
+                                <li> <a href="#none">터미널</a></li>
+                                <li> <a href="#none">유통물류</a></li>
+                                <li> <a href="#none">철강</a></li>
+                                <li> <a href="#none">포워딩</a></li>
+                                <li> <a href="#none">해상풍력</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">동방웹진</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">칼럼</a></li>
+                                <li> <a href="#none">뉴스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">고객지원</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">고객지원</a></li>
+                                <li> <a href="#none">사이버신문고</a></li>            
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">채용정보</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">채용공고</a></li>
+                                <li> <a href="#none">인재상</a></li>
+                                <li> <a href="#none">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 서브메뉴 바탕색용 div -->
+            <div class="sub-menu-bg"></div>
+          </div>            
+        </div>
+        <div class="lang">
+            <a href="#none">ENG</a>
+            <span class="bar">&#124;</span>
+            <a href="#none">CN</a>
+        </div>
+        <div class="sitemap">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        
+    </header>
+
+    <main class="main">
+        <!-- main-visual -->
+
+        <div class="main-visual">
+            <video src="images/main_visual_video.mp4" muted loop autoplay></video>
+        </div>
+        <!-- quick-menu -->
+        <div class="quick-menu">
+            <div class="inner quick-menu-inner">
+                <div class="quick-icons-wrap">
+                    <ul>
+                        <li>
+                            <a href="sub_tracking.html">
+                                <div class="quick-icons trace-icon"></div>
+                                <span class="quick-icons-text">화물 추적</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sub_service.html">
+                                <div class="quick-icons service-icon"></div>
+                                <span class="quick-icons-text">서비스 신청</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="quick-icons invest-icon"></div>
+                                <span class="quick-icons-text">투자 정보</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="quick-icons webzine-icon"></div>
+                                <span class="quick-icons-text">동방 웹진</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="quick-icons news-icon"></div>
+                                <span class="quick-icons-text">최신 뉴스</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#none">
+                                <div class="quick-icons job-icon"></div>
+                                <span class="quick-icons-text">채용 공고</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- section 01 primary-business -->
+
+        <section class="seciton01">
+            <h2>주요사업</h2>
+            <div class="primary-business">
+                <div class="primary-business-inner">
+                    <div class="biz-area" data-image="images/primary_business_container_bright.png">
+                        <div class="biz-text-container">
+                            <h4>컨테이너 하역 운송사업</h4>
+                            <p>화물을 생산 공장부터 수입자의 창고까지 원활하게 연결해줍니다</p>
+                        </div>
+                    </div>
+                    <div class="biz-area" data-image="images/primary_business_bulk.png">
+                        <div class="biz-text-container">
+                            <h4>벌크 하역 운송사업</h4>
+                            <p>다양한 벌크 화물을 효율적으로 육상 및 해상 운송합니다</p>
+                        </div>
+                    </div>
+                    <div class="biz-area" data-image="images/primary_business_terminal.png">
+                        <div class="biz-text-container">
+                            <h4>컨테이너 터미널 사업</h4>
+                            <p>전국 주요 항만에 거점을 설치하여 컨테이너 보관 및 연계 운송을 도와드립니다</p>
+                        </div>
+                    </div>
+                    <div class="biz-area" data-image="images/primary_business_logistics.png">
+                        <div class="biz-text-container">
+                            <h4>유통 물류 사업</h4>
+                            <p>다양한 수출입 화물에 대해 고객사에 맞는 유연한 솔루션을 제공해드립니다</p>
+                        </div>
+                    </div>
+                    <div class="biz-area" data-image="images/primary_business_iron.png">
+                        <div class="biz-text-container">
+                            <h4>철강 운송사업</h4>
+                            <p>다양한 철강제품의 수출입 및 보관 사업을 통해 철강 품질을 최상으로 유지합니다.</p>
+                        </div>
+                    </div>
+                    <div class="biz-area" data-image="images/primary_business_wind_power.png">
+                        <div class="biz-text-container">
+                            <h4>해상풍력 발전사업</h4>
+                            <p>국내 최초 대단위 육상풍력 발전 단지 조성공사를 수행 후 미래 에너지 사업을 위해 점차 사업을 확대 중입니다</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 02 partner -->
+        <section class="section02">
+            <h2>주요 고객사</h2>
+            <p>동방의 물류 운송 기술을 믿고
+                계약을 이어나가고 있는
+                주요 고객사입니다</p>
+
+            <div class="partner">
+                <div class="inner partner-inner">
+                    <div class="swiper partner-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide partner-swiper-slide">
+                                <a href="#none"><img src="images/logos/samsung_sdi_logo.svg" alt="" /></a>
+                            </div>
+                            <div class="swiper-slide partner-swiper-slide">
+                                <a href="#none"><img src="images/logos/coupang_logo.svg" alt="" /></a>
+                            </div>
+                            <div class="swiper-slide partner-swiper-slide">
+                                <a href="#none"><img src="images/logos/homeplus_logo.svg" alt="" /></a>
+                            </div>
+                            <div class="swiper-slide partner-swiper-slide">
+                                <a href="#none"><img src="images/logos/Bechtel_logo.svg" alt="" /></a>
+                            </div>
+                            <div class="swiper-slide partner-swiper-slide">
+                                <a href="#none"><img src="images/logos/HD_oilbank_logo.svg" alt="" /></a>
+                            </div>
+                            <div class="swiper-slide partner-swiper-slide">
+                                <a href="#none"><img src="images/logos/Samsung_logo.svg" alt="" /></a>
+                            </div>
+                            <div class="swiper-slide partner-swiper-slide">
+                                <a href="#none"><img src="images/logos/lotte_logo.svg" alt="" /></a>
+                            </div>
+                            <div class="swiper-slide partner-swiper-slide">
+                                <a href="#none"><img src="images/logos/LG_logo.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- section 03 about-dongbang -->
+            <div class="about-dongbang">
+                <h2>ABOUT 동방</h2>
+                <p>동방은 물류 분야의 선두주자를 목표로 노력하고 있으며, 다음과 같이 성장했습니다.</p>
+
+                <div class="inner about-dongbang-inner">
+                    <div class="about-box1">
+                        <div class="about-box-container">
+                            <img src="images/icons/employee_white.png" alt="">
+                            <span class="name">종업원수</span>
+                            <span class="num" data-num="783">0</span>
+                        </div>
+                    </div>
+                    <div class="chain"></div>
+                    <div class="about-box2">
+                        <div class="about-box-container">
+                            <img src="images/icons/cruise_white.png" alt="">
+                            <span class="name">만 톤 용량 이상 선박</span>
+                            <span class="num" data-num="7">0</span>
+
+                        </div>
+                    </div>
+                    <div class="chain"></div>
+                    <div class="about-box3">
+                        <div class="about-box-container">
+                            <img src="images/icons/truck_white.png" alt="">
+                            <span class="name">물류용 자동차</span>
+                            <span class="num" data-num="1058">0</span>
+                        </div>
+
+                    </div>
+                    <div class="chain"></div>
+                    <div class="about-box4">
+                        <div class="about-box-container">
+                            <img src="images/icons/crane_white.png" alt="">
+                            <span class="name">컨테이너 하역 운송용 장비</span>
+                            <span class="num" data-num="67">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section 04 webzine -->
+            <div class="webzine">
+                <h2>동방 웹진</h2>
+                <div class="tabs">
+                    <button class="tablinks" onclick="switchTab('column')" id="default-tab">동방칼럼</button>
+                    <button class="tablinks" onclick="switchTab('news')">동방뉴스</button>
+                </div>
+            
+                <div class="inner webzine-inner">
+                    <div class="webzine-box webzine-box1 column" data-url="#none">
+                        <div class="webzine-box-container">
+                            <div class="webzine-imgbox1"></div>
+                            <div class="webzine-textbox webzine-textbox-first">
+                                <h4 class="webzine-title">[Problem Solving]<br>동방의 물류 시스템 개선에 대해</h4>
+                                <span class="webzine-preview webzine-preview-first">동방은 어떻게 물류 운용 시스템을 개선했을까? 이에<br>대해 물류 솔루션 팀장 OO은 다음과 같이 글을 작성하였다.</span>
+                                <span class="date">XX.02.03</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="webzine-box webzine-box2 column" data-url="#none">
+                        <div class="webzine-box-container">
+                            <div class="webzine-imgbox2"></div>
+                            <div class="webzine-textbox">
+                                <h4 class="webzine-title">[시사 / 상식] 연말 절세 비법!</h4>
+                                <span class="date">XX.02.01</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="webzine-box webzine-box3 news" data-url="#none">
+                        <div class="webzine-box-container">
+                            <div class="box3-flex">
+                                <div class="webzine-imgbox3"></div>
+                                <div class="webzine-textbox">
+                                    <h4 class="webzine-title">삼성 SDI와 20억 수주 계약</h4>
+                                    <span class="webzine-preview webzine-preview-third">2018년 3월 29일, 삼성 SDI와 동방은 물류 운송으로 30억 계약을 하였다.</span>
+                                    <span class="date">XX.02.03</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="webzine-box webzine-box4 news" data-url="#none">
+                        <div class="webzine-box-container">
+                            <div class="webzine-imgbox4"></div>
+                            <div class="webzine-textbox">
+                                <h4 class="webzine-title small">동방 자이언트 1호 출항</h4>
+                                <span class="date">XX.02.03</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="webzine-box webzine-box5 news" data-url="#none">
+                        <div class="webzine-box-container">
+                            <div class="webzine-imgbox5"></div>
+                            <div class="webzine-textbox">
+                                <h4 class="webzine-title small">동방 쿠팡 화물 10T 선적</h4>
+                                <span class="date">XX.02.03</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="webzine-box webzine-box6 news" data-url="#none">
+                        <div class="webzine-box-container">
+                            <div class="webzine-imgbox6"></div>
+                            <div class="webzine-textbox">
+                                <h4 class="webzine-title small">동방 롯데 화물 100T 보관</h4>
+                                <span class="date">XX.02.03</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="webzine-box webzine-box7 news" data-url="#none">
+                        <div class="webzine-box-container">
+                            <div class="webzine-imgbox7"></div>
+                            <div class="webzine-textbox">
+                                <h4 class="webzine-title small">1분기 실적 잠정 발표</h4>
+                                <span class="date">XX.02.03</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section 05 company-location -->
+            <div class="company-location">
+                <h2>사업장 현황</h2>
+                <div class="company-location-inner">
+                    <div id="text-container0">
+                        <h4>서울/경기도<h4>
+                        <br>
+                        <p>본사 &#58; 서울특별시 중구 통일로2길 16 AIA타워 3층</p>
+                        <p>인천지사 &#58; 인천광역시 서구 북항로 309번길 118(원창동)</p>
+                        <p>평택지사 &#58; 경기도 평택시 포승읍 하만호길 227</p>
+                      </div>
+                      <div id="text-container1">
+                        <h4>충청도<h4>
+                        <br>
+                        <p>태안지사 &#58; 충청남도 태안군 원북면 발전로 457 태안발전본부</p>
+                        <p>천안지사 &#58; 충청남도 천안시 동남구 성남면 5산단로 242</p>
+                        <p>서산지사 &#58; 충청남도 서산시 대산읍 대죽1로 413 (대산항)</p>
+                      </div>
+                      <div id="text-container2">
+                        <h4>전라도<h4>
+                        <br>
+                        <p>광양지사 &#58; 전라남도 광양시 백운1로 79</p>
+                        <p>목포지사 &#58; 전라남도 영암군 삼호읍 대불로 629</p>
+                        <p>군산지사 &#58; 전라북도 군산시 자유로 482 업무지원동 301호</p>
+                      </div>
+                      <div id="text-container3">
+                        <h4>강원도<h4>
+                        <br>
+                        <p>강원도 &#58; 삼척시 원덕읍 삼척로 734 삼척그린파워본부</p>
+                      </div>
+                      <div id="text-container4">
+                        <h4>경상도<h4>
+                        <br>
+                        <p>부산지사 &#58; 부산광역시 중구 중앙대로 70 동원산업빌딩 14층</p>
+                        <p>포항지사 &#58; 경상북도 포항시 남구 대송로 167(괴동동)</p>
+                        <p>창원지사 &#58; 경상남도 창원시 마산회원구 봉암공단로 9</p>
+                        <p>울산지사 &#58; 울산광역시 남구 신항로 716번길 1 5층</p>
+                        <p>하동지사 &#58; 경상남도 하동군 금성면 경제산업로 509</p>
+                      </div>
+
+                    <svg version="1.1" id="Layer_1"x="0px" y="0px" viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+                        <path class="st0" d="M630.2,550.1c-5-1.8-9.1-2.2-13.5-2.7c-4.8-0.6-9.8-0.2-14.5,0.6c-7.6,1.3-17.2,2.8-23.3,7.4
+                          c-5.7,4.3-8.3,13.1,1.3,14.5c3.7,0.5,7-0.2,10.5-1.1c4-1,7.8-1.2,12.1-1.4c3.8-0.2,6.9-2.1,10.3-3.6c3-1.2,6.4-1.6,9.2-3.1
+                          C624.5,559.6,636.2,550.7,630.2,550.1"/>
+
+                        <path class="st1" d="M595.5,449.7c-3,1.5-2.6,4.6-4.3,6.9c-2.2,3-4.9,3.1-3.6,7c0.5,1.5-0.2,2.8,0.2,4.1c0.5,1.3,2.7,2.5,3.7,3.5
+                          c0.9,0.9,6,7.3,3.1,7.8c-2,0.3-4.6-6.1-5.9-7.4c-1-1-2.7-2.2-4.3-1.9c-1.5,0.3-2.1,1.8-3.5,2.2c-2.5,0.7-8.2-2.7-9.4,1
+                          c-0.7,2,1.8,2.1,2.6,3.3c1.4,2-2.1,2.7-1.1,4c1,1.4,3.8-0.3,5-0.5c2.1-0.4,3,0.5,4.5,1.1c1.4,0.5,9.3-0.2,6,3.7
+                          c-1.3,1.5-3.4,0.8-5,1.4c-1.2,0.4-2.1,2-2.7,3c-0.9,1.4-0.9,2.3,1.5,2.9c1.9,0.5,3-0.9,4.8-0.6c4.8,0.9-1.3,5.3,3,6.6
+                          c1.5,0.5,3.9-0.1,4.2,2.1c0.2,1.6-2.2,1.5-3.9,1.6c-0.3,1.4-1.6,2.6-3.1,1.6c-1.5-1-0.3-2.7-1-3.8c-1.1-1.7-2.9-1.2-4,0.2
+                          c-1.2,1.5-0.9,2.9-0.1,4.5c0.8,1.5,2.9,2.7,0.8,3.7c-0.5,0.2-1.4-0.4-2.2,0c-0.7,0.4-0.9,1.2-1.1,1.9c-0.6,1.8,0.2,2.8-1.5,4.3
+                          c-1.4,1.2-3.2,1.6-4.9,2.2c-1.2,0.4-3.5,1.1-3,2.7c0.3,0.9,1.5,0.7,2,1.1c0.7,0.6,0.3,1.2,0.8,1.8c2.3,2.7,7,0.2,9.7-0.7
+                          c1.8-0.6,3.6-0.9,5.2-2c1.5-1,2.1-2.6,3.2-3.7c3.4-3.2,3,2.6,4.1,4.4c0.4,0.7,1.1,0.8,1.2,1.8c0.1,0.7-0.6,1.6-0.2,2.3
+                          c0.4,0.7,1.2,0.4,1.6,0.9c0.6,0.7,0.4,1.2,0.6,1.8c0.5,1.6,0.3,2.5,2.4,1.2c1.3-0.9,1.7-2.1,2.2-3.3c0.6-1.7,1.3-3.1,3-4.2
+                          c1.4-1,3.5-1,4.7-2c1.1-0.9,1.1-3.3,2.4-4c2.6-1.4,1.7,1.7,2.4,2.7c1.5,1.9,6.4,0.7,7.1,2.7c5.1,1,2.6-4.8,4.1-6.7
+                          c0.5-0.7,1.7-0.9,2.1-1.8c0.4-0.8,0-1.7,0.2-2.5c0.4-1.9,1.6-1.8,3.4-2.4c1.7-0.5,3-0.8,4.1-2.1c0.5-0.6,0.2-1.6,1.3-1.9
+                          c1.3-0.4,1.4,1,2.4,1c1.8-0.1,2.3-2.2,3.4-3c1.1-0.8,3.9-1.4,5-0.4c2,1.8-1.1,2.5-2.4,3.1c-0.9,0.4-1.6,0.8-2.1,1.6
+                          c-0.5,0.8,0.3,1.6-0.9,2.1c-0.8,0.4-1.7-0.6-2.6-0.4c-0.7,0.2-1.3,1-1.8,1.6c-0.8,1.1-2.2,3.1-1.4,4.2c0.9,1.4,3.3,0.5,4.7,1.2
+                          c2.1,1,1.7,2.7,3.2,3.9c3.6,2.9,6.8-1,8.6-3.3c1.2-1.5,2.4-2,4.2-2.4c1.6-0.3,4.1-0.4,3.8-2.5c-0.1-1.1-2.2-3.5-2.9-4.3
+                          c-1.2-1.3-2.5-2.1-3.3-3.7c-1.3-2.7-0.9-6.6,3-7.4c3.3-0.7,6.7,1.4,7,4.5c0.3,3.9-4,7.2,1.7,9.7c1.1-1.4,1.8-2.3,2.2-4.1
+                          c0.2-1.3-0.3-3.4,1.3-4.1c1.7-0.8,3.3,0.9,3.9,2.2c0.8,1.8,0,2.8-0.7,4.4c-0.6,1.3-0.9,3.5,1.5,3.8c1.5,0.2,2.4-1.4,2.8-2.6
+                          c1.2-3.3-2-6.1-1.5-9.3c0.3-1.7,2-2.6,0.7-4.3c-1-1.4-2.9-1.2-4.4-2c-1.3-0.6-3.3-2.2-2.5-3.6c0.7-1.2,3-1,4.1-0.5
+                          c2.1,1,4.3,6,5.5,1.2c0.8-2.9-0.9-6.9-2-9.7c-1.3-3.2-4-5.2-5.5-8.2c-1.5-2.9-1.5-5.1-4.1-7.6c-1-1-2.3-2.1-2.8-3.3
+                          c-0.7-1.6-0.1-2.7-1.7-4.1c-3-2.6-6-1-9.1,0.2c-4.6,1.9-15.4,4.1-19.9,0.8c-2.4-1.7-2-5.3-5.1-6.3c-1.6-0.5-4.2,0.6-5.8,0.2
+                          c-1.8-0.5-2.3-1.5-4.5-1.4c-6,0.3-9.6,5-14.9,7.2c-1.2,0.5-2.4,1-3.8,0.8c-2.4-0.2-1.9-0.8-2.1-2.3
+                          C598.9,453.6,598,449.5,595.5,449.7c0,0.3-0.2,0.5-0.2,0.8"/>
+                        
+                          <path class="st2" d="M683.5,411.1c-2.7,0.1-2.9,1.7-5.8,0.3c-2.2-1-2.9-2.1-5.7-1.8c-1,0.1-1.8,0.7-2.9,0.7c-1.2,0-1.9-0.6-3.2-0.5
+                          c-2,0.1-3.7,1.6-5.5,2.3c-2,0.8-3.8,1.2-5.7-0.3c-1.9-1.5-1.1-3-1.3-4.9c-0.5-4.6-4.6-5.5-8.8-3.6c-5,2.3-7.5,3.3-12.6,0.7
+                          c-4.3-2.2-9.2-2.5-11.3,1.9c-0.9,1.9-2,2.4-4.7,3c-2.9,0.7-3,1.6-5.6,3.2c-3.2,1.9-5.9,0.1-9.2,2.1c-1,0.6-3.7,2.2-3.1,3.6
+                          c0.7,1.6,3.4,0.6,4.5,0.6c1.9,0,2.6,0.2,4,1c0.5,0.3,0.4,1.3,1.1,1.6c0.9,0.3,1.9-0.6,2.4-0.5c5,1.1,0.2,4.1,1,6.4
+                          c-2.2,0.9-11.8-4.5-12.2-0.2c-0.2,1.9,3.1,2.1,3,4.1c-0.1,2.2-3.3,2.5-4.5,3.9c-1.3,1.6-1.2,4,0.8,4.9c1.7,0.7,5.8-1.1,5.2,2.3
+                          c-0.4,1.9-3.6,2.2-5.1,3.2c-1.3,0.9-3.3,2.9-3.7,4.2c-1.1,3.1,1.9,2.5,3.3,4.6c1.1,1.7-1.1,3.3,0.3,4.7c1,1,5.2,0.3,6.7,0.2
+                          c2.7-0.3,4.5-1.1,6.4-2.8c2.8-2.5,6.3-8.2,11.2-6.1c1,0.5,1.2,1.7,2.2,1.9c1.1,0.3,1.6-0.4,2.7-0.6c1.7-0.3,3.6-0.6,5,1.2
+                          c1,1.4,0,2.4,0.7,3.8c0.6,1.2,0.7,2.2,2.4,2.5c4.3,0.9,9.3,0.7,13.7,1.1c2.4,0.2,4.6,0.7,6.7-0.7c1.9-1.2,2-2.7,4.8-2.7
+                          c4.2,0.1,8.9,3,9.1-3.1c0.1-2.2-1.4-4-0.8-6.2c0.6-2.1,2.6-3.3,3.2-5.4c0.7-2.5-0.1-5,0.5-7.5c0.5-2.2,1.3-4.9,2.6-6.7
+                          c2.2-3.1,9.3-4.6,10.3-7.5C686.6,417.3,689.1,410.9,683.5,411.1z"/>
+                        
+                          <path class="st3" d="M734.9,338.8c-0.8-2.3-4.7-4.1-7.3-4.1c-1.7,0-3.4,0.7-5.2,0.3c-1.8-0.3-2.9-1.5-4.5-2.2
+                          c-1.6-0.7-3.5,0.2-5-0.7c-1.9-1.1-0.6-2.3-0.2-3.7c1.1-3.6-3.6-3.8-6.3-2.7c-3.4,1.3-6.2,3.7-9.8,1.2c-2-1.5-5.7-4.7-7.9-1.6
+                          c-1,1.5,2.1,8.3-2,5.4c-0.7-0.5,0.2-1.3-1.3-1.4c-0.7,0-1.2,0.9-1.8,1.1c-2.1,0.9-2.3-0.8-3.5-2.2c-1-1.3-1.9-1.5-3.9-0.9
+                          c-1.5,0.4-2.8,2.1-3.7,3.1c-1.8,2-4.5,4.5-5.3,6.8c-1.3,3.5-2.8,4-6.4,5.3c-2.8,1-4.8,3.2-7.6,4.4c-3.8,1.7-3.2,2.9-1,5.8
+                          c2.2,2.9,1.1,5.1-1.2,7.4c-2.5,2.5-3.7,3.6-3.2,7.2c0.5,3.1,2.9,5.2,3.9,8.2c0.9,2.8,1.8,5.7,5.6,6c1.8,0.1,3-0.5,4,1.3
+                          c0.6,1.1,0.1,3.2,0.1,4.4c-0.1,1.5-0.6,3.3,0.1,4.7c0.7,1.4,1,2.2,1.9,3.4c0.8,1.1,2,2.6,2.4,3.8c0.4,1.3,1.3,2.7,1.8,4.1
+                          c0.6,1.9,0.1,2.3-0.3,3.9c-0.3,1.3-0.2,3.3,1.5,3.7c1.5,0.3,2.6-1.1,4.3-0.9c1.5,0.2,2.8,0.7,4.1,1.4c1.2,0.6,2.6,1.8,4.1,1.5
+                          c1.2-0.3,2.4-1.6,3.7-1.9c2-0.6,3.1-0.3,4.1-2.1c0.9-1.8,1.4-2.7,3-4.3c1.6-1.6,1.6-2.2,1.3-4.1c-0.4-2.5,0.4-2.2,1.7-4.1
+                          c1-1.4,0.6-2.7-1.3-3.3c-0.8-0.3-1.7,0.1-2.4-0.1c-0.7-0.3-1-1-1.6-1.4c-2.3-1.6-6.8-1.1-4.9-5.3c0.8-1.8,1.3-2,1.2-3.9
+                          c-0.1-1.7,0.7-2.7,0.8-4.1c0.4-3.3-3.5-4.9-4.3-7.7c-0.7-2.2,0.6-2.6,2.4-3.1c0.7-0.2,1.5-0.1,2.3-0.8c1.1-1.1,0.3-1.5,0.6-2.5
+                          c0.6-2.3,1.9-1.7,3.9-2.4c2.1-0.7,2.5-1.6,3-3.3c0.7-2.1,1.2-2.1,3.7-1.8c1.8,0.2,2.8,0.4,4.5-0.4c1.4-0.7,2.4-2.2,4-2.2
+                          c1.4,0,2.9,1.2,4.4,1.3c1.2,0.1,3-0.4,4-1.4c0.6-0.6,0.3-1.4,1-1.9c0.6-0.4,2-0.4,2.7-0.7c3.2-1.4,2.7-5.1,6.1-6.7
+                          c2.9-1.4,6.2-0.8,8.3-3.6c0.5-0.6,0.9-1.7,0.9-2.1"/>
+                        
+                          <path class="st4" d="M614.7,341.7c0.4,0.9,2.4,0.8,3.4,1.6c1.2,1,2.3,1.2,3.3,2.3c1.9,2.2,5.5,2.8,8.2,2.5c1.8-0.2,3.5-0.2,5.2,0
+                          c2.3,0.2,2.5-0.4,4.3-1c3.1-1.1,7.2,0.4,10,1.5c1.7,0.7,2.8,1.3,4.1,2.7c0.6,0.7,2.5,2.6,2.8,3.3c1.2,3.2-3.3,5-5.1,6.8
+                          c-2.6,2.5-1,5.6-0.2,8.5c0.4,1.7,1.4,2.4,2.3,3.9c0.9,1.4,0.7,2.9,1.8,4.1c0.4,0.4,2.5,1.9,3,2c1.2,0.4,2.1-0.4,3.5-0.1
+                          c2.5,0.6,2.4,3.2,2.6,5c0.5,4-4.2,9.1,2.8,10.4c1.3,1.6,0.4,3.5,1.1,5.2c0.7,1.7,1.4,2.9,1.8,4.7c0.5,2.1,0.8,2.4-0.3,4.4
+                          c-0.9,1.5-2,2.9-3.4,0.9c-1.4,0.3-2.3,1.6-3.6,2.2c-1.7,0.7-3.1,0.7-5,0.1c-1.4-0.5-3.4-1.5-3.9-2.8c-0.6-1.4,0.7-2.7-0.2-4.3
+                          c-0.7-1.2-1.9-1.9-3.3-2c-2-0.2-2.2,0.6-3.7,1.6c-1.5,1-3.2,1.3-5,1.4c-1.6,0.1-3.4,0.1-4.7,0c-2.2-0.1-2.4-0.9-3.8-2
+                          c-1.3-1-2.7-1-4.4-1.1c-4.6-0.4-3.2,2.6-5.6,5c-1.8,1.8-3.3,0.8-5.3,1.3c-1.7,0.4-2.4,1.9-3.8,2.7c-1.1,0.6-3.2,1.1-4.6,0.9
+                          c-3-0.5-1.3-1.6-0.9-3.1c0.5-1.6-2-6.7-3.9-7.4c-1.4-0.5-3.7,0.8-4.2-1.5c-0.3-1.2,1.2-2.7,0.7-4.2c-0.5-1.4-1.9-2.2-1.6-3.9
+                          c0.1-0.8,1.1-1.5,1.3-2.2c0.2-0.8-0.1-1.6-0.2-2.3c-0.1-1.6,0-2.9,0.8-4.5c0.6-1.1,2.5-2.5,2.7-3.6c0.3-2.2-2.1-2.2-3.2-3.6
+                          c-0.9-1.2,0.4-3.1-1.6-4.2c-4.7-2.8-3,4.3-3.4,6.1c-0.2,0.9-1.1,3.4-2,3.5c-1.3,0.1-2.5-2.3-2.6-3.1c-0.2-1.6,0.3-2.8-0.4-4.3
+                          c-0.7-1.6-1.4-2.6-1.3-4.4c0-1.4,0-3.2,0.9-4.3c-1.2-1.3-7-2.6-5-4.8c-2.7-1.3-7.5,0.3-7.3-4.1c0.1-1.9,1.5-2.1,3.1-2.9
+                          c2-1,1.5-1.8,2.5-3.4c1-1.6,2.7-1.5,4.1-2.5c1-0.7,2.5-2.5,3.7-0.8c0.9,1.2-1.3,3.2,0.4,4.3c1.7,1.2,2-0.9,3-1.8
+                          c0.7-0.6,1.1-0.9,2.2-1c0.9-3.6-4.5-1.8-4.9-4.6c-0.6-4,5-2.9,7.1-3.4c1.2-0.2,2.2-1.5,3.5-1.7c1.7-0.2,2.8,0.8,4.3,0.9
+                          c1.1,0.1,2.9-0.9,3.9-0.2c0.9,0.5,0.9,2.5,1.5,3.3c1.4-0.1,1.4-1.7,3.2-1.7c0.1,0.2,0,0.4,0,0.6"/>
+                        
+                          <path class="st5 hover-fill" d="M631.7,253.4c-1.5,0.4-3.3,0.7-4.8,1.1c-1.7,0.5-2.7,1.4-4.3,2.1c-2.9,1.4-6.5,1-9.9,1c-1.8,0-3.2-0.1-4.6,0.8
+                          c-0.6,0.4-0.8,1-1.5,1.4c-0.7,0.4-1.6,0.2-2.2,0.5c-2.4,1.3-0.9,7.1-4,7.3c-1.8,0.1-1.6-1.9-3.7-1c-1.6,0.6-2,2.3-2.1,3.8
+                          c-0.2,3.2,0.6,6.4,0.2,9.7c-0.2,1.5-1.2,2.8-1,4.3c0.1,0.7,0.8,1.2,0.8,1.9c0.1,0.8-0.6,1.4-0.7,2.1c-0.1,1.9,1.2,1.9,1.9,3.3
+                          c0.9,1.9-0.5,1.8-1.8,3.1c-1.6,1.7-2,4.5-0.2,6.1c2.1,1.9,5,1,7.6,0.7c2-0.2,6.3-1,6.7,1.8c0.2,1.2-1.2,1.9-0.7,3.2
+                          c0.4,1.3,2.5,1.5,2.2,3c-1.3,0.6-3,0.3-3.9,1.4c-0.8,1-0.5,3.2,0.5,4c1.2,1,3.1,0.2,3.4,1.8c0.3,1.4-2,1.6,0,3.1
+                          c-1.2,2.4-5.4,2.8-5,6.2c0.2,1.5,1.5,2.2,2.8,2.7c0.6,0.3,1.7,0.2,2.2,0.8c0.8,0.9,0.1,1.4,0.3,2c0.2,0.7,0.9,3.1,1.5,3.6
+                          c2,1.5,2.9-1.2,4-1.9c2.5-1.6,1.2,0.7,0.7,1.8c-0.9,1.8,0.7,2.4,0.4,4.1c-0.2,1.3-1.7,1.2-1.9,2.5c-0.3,1.6,1.3,1.5,2.4,2.1
+                          c2.1,1.2,3.1,3.6,5.3,4.8c2.7,1.5,4.6,1,7.3,0.5c2.7-0.5,5.2,0.5,7.9,0.2c0.7-3.3,6.9-0.3,8.6,0c2.4,0.5,7,0.2,9.1-1.3
+                          c2.9-2,3.5-4.5,7.3-5.7c3-1,5.1-2.1,6.8-4.5c0.9-1.2,0.8-2.7,1.8-3.8c0.9-0.9,2.7-2.1,3.8-3c2.6-2.1,4.5-4.5,5-7.8
+                          c0.5-3.2-0.9-6.1-0.2-9.3c0.3-1.6,1.1-2.8,1.3-4.5c0.2-1.9,0.5-1.8,1.4-3.5c0.9-1.8-0.1-2.4-2-2.8c-2.4-0.4-2.3-0.3-4-2
+                          c-0.9-0.9-2.5-2.1-3.8-2.6c-1.5-0.6-3.7,0-5.1-0.6c-1.8-0.8-1.5-2.5-1.2-3.9c0.4-1.7,0.6-2.6,0.2-4.3c-0.3-1.6-0.7-3.2-0.3-4.8
+                          c0.4-1.5,1.5-2.2,2.3-3.5c2-3.6-0.1-5.6-3.2-7.4c-1.1-0.6-3-1.5-3.7-2.5c-0.8-1.3-0.6-3.3-1.3-4.6c-0.7-1.3-1.9-2.5-3.4-2.7
+                          c-1.8-0.3-3.1,0.7-4.7-0.4c-1.3-0.9-1.2-2.4-2.7-3.2c-1.6-0.8-3.2-0.2-4.7-1.6c-1.8-1.8-2.5-4.2-5.4-5c-1.9-0.5-6.2-0.9-7.9-0.2"/>
+                        
+                          <path class="st6" d="M775,329.4c-1.7-2.2-2.8-4.5-3.9-7.1c-1.3-3.1-3-6.2-4.8-9.2c-1.9-3.1-4.3-5.9-6.2-8.9
+                          c-1.9-3.2-2.2-6.7-4.1-9.7c-2.5-3.9-6.5-6.8-9.3-10.5c-2.4-3.3-5.2-6.4-7.3-9.7c-2-3-3.9-5.8-6.2-8.6c-2.7-3.2-3.7-6.1-5-9.9
+                          c-1.1-3.2-3.7-5.5-5.4-8.3c-1.7-2.7-2.6-6-3.4-9c-0.8-3.1-1.9-6.3-2.8-9.3c-1.2-4.1-2.8-5.1-7.3-6c-4.4-0.9-3.9-3.9-5.9-6.6
+                          c-2.1-2.9-6.4-1.8-9.3-3.6c-1.2-0.8-1.9-2.2-2.7-3.2c-1-1.2-1.9-2-3.5-2.9c-1.6-0.9-3.3-1.7-4.4-2.9c-0.1-0.4-0.2-0.8-0.3-1.2
+                          c-0.8-2.2-2.1-5.4-4.3-6.4c-2-1-2.2,0.1-4,0.6c-2.2,0.6-1.7-0.5-3-1.6c-3.5-3.1-0.5,3.7-0.7,5.3c-0.2,1.6-1.3,2.4-0.7,3.9
+                          c0.6,1.5,2.5,2.1,3.3,3.4c0.9,1.5,1.1,2.9-0.1,4.3c-1.4,1.6-2.6,0.8-4.2,1.2c-1.9,0.5-2.1,1.5-2.8,2.9c-0.9,1.9-1.1,1.4-3.4,1.9
+                          c-1.6,0.3-2.6,1-3.3,2.5c-0.6,1.1-0.5,3-2.1,3.5c-3.9,1.4-2.7-5.5-3.2-7.1c-0.5-1.5-1.9-2.5-2.4-3.9c-0.5-1.5,0-3.1,0.5-4.5
+                          c0.8-2.6,1.5-6.4-2-7.7c-5.2-2-7.1,4.4-7.1,7.7c0,1.9-0.5,4.3-3,4.7c-1.6,0.3-4.5-1.3-5.9-1.9c-0.3,0-0.2,0.1-0.2,0.2
+                          c-2.1,2-0.5,5.5-3.5,7.1c-1.5,0.8-2.6,0.6-3.6,1.8c-0.7,0.8,0.1,0.9-1.1,1.6c-0.7,0.4-2,0.2-2.8,0.6c-1.7,0.9-1.5,2.1-2.6,3.3
+                          c-1,1.1-2.8,1.5-4.1,1.9c-1.3,0.4-2.7,0.5-3.2,2c-0.7,2,1.1,1.5,2.1,2.7c1.8,2.3-2.1,5.4-0.6,8.1c0.6,1.2,2,2.1,2.3,3.5
+                          c0.4,1.7-0.3,2.8,0.9,4.5c0.9,1.3,2.5,2.5,4.1,2.9c1.8,0.5,3.5-0.2,5,0.9c1.5,1.1,1.1,2,3.4,2.2c1.7,0.2,3.5,0,5.2,0.2
+                          c3.3,0.5,6.3,2.3,8.4,4.8c1,1.2,1.2,2.4,2.5,3.2c1.5,0.9,2.3,0.4,3.5,1.9c0.4,0.6,0,1.1,0.8,1.6c0.9,0.6,1.6,0.1,2.6,0.1
+                          c1.9,0,3.6,0.2,4.5,1.8c0.8,1.2,0.4,2.8,1.1,4.1c1,1.7,2.5,1.9,4.3,2.3c3.5,0.9,5,3.4,3.1,6.4c-0.8,1.4-1.9,1.8-2,3.5
+                          c-0.1,1.5,1.1,2.8,1.5,4.3c0.4,1.6,0.6,3.3,0.3,4.9c-0.3,1.2-1.6,3.2-1.1,4.5c0.7,2.2,1.8-0.2,3.5,0c1.3,0.1,2.7,2,3.7,2.8
+                          c1.1,0.9,2,2.3,3.2,3.1c1,0.7,4,0.7,4.4,1.5c0.5,0.7-1,2.7-0.9,3.9c0.2,1.5,0.3,3.9,0,5.4c-0.6,2.9-1.6,4.3-1.9,7.4
+                          c-0.2,1.8-0.1,4.4,1.2,5.1c0.6,1.8,2,3.5,3.9,3.8c0.9,0.1,1.7-0.6,2.5-0.3c0.8,0.3,0.7,0.9,1.2,1.3c1,0.8,2.6,1.6,4,0.3
+                          c2-1.8-1.6-7.2,1.8-8.1c1.9-0.5,2.6,1.3,3.6,2.3c1.4,1.5,2.4,1.7,4.6,1.4c1.4-0.2,3.4-0.6,4.7-1c1.8-0.6,2.8-2,5-1.8
+                          c1.4,0.2,3.2,1.1,2.9,2.5c-0.3,1.3-2.7,2-2.7,3.5c0,2.2,2.6,1.6,4.1,2c1.5,0.3,2.8,1,4.3,1.4c1.4,0.4,3,1.2,4.6,1.3
+                          c1.7,0.1,3.5-0.8,5.2-0.6c3.4,0.3,5.6,3.8,9.3,2.9c2-0.4,1.9-1.4,4.1-0.8c1.6,0.4,2.7,1.2,4.7,0.8c1.7-0.3,2.7-1.8,4.2-2.3
+                          c1.6-0.5,3.4,0.5,5.1,0.4c4.4-0.2,6.5-0.8,10.3,1.7c4.3,2.8,3.3-2.1,6.2-3.2c1.8-0.7,3.5,0.2,4.1-2
+                          C776.7,331.9,775.9,330.5,775,329.4z"/>
+                        
+                          <path class="st7 hover-fill" d="M632.5,297.3h-5.3l-4-0.8l-5.3,2.3c0,0-1.6-1.5-2.4-0.4c-0.8,1.1-0.8,2.6-0.8,2.6s1.6,2.2,2.8,2.6
+                          c1.2,0.4,3.3,1.5,3.3,2.6c0,1.1-1.2,2.2,1.2,2.6c2.4,0.4,3.3,1.8,3.3,1.8l2.8,1.5l2.4-0.4l3.7,0.7l4.5,0.7c0,0,1.6-2.2,1.6-2.9
+                          c0-0.7,1.6,0.7,2.8-1.1c1.2-1.8,2.4-2.9,2.4-2.9s1.2-0.4-0.8-1.8c-2-1.5-1.2,0.7-2-2.6c-0.8-3.3-2.4-3.3-2.4-4.4
+                          c0-1.1,0-1.8-1.2-2.2c-1.2-0.4-1.6-1.5-2.8-1.1c-1.2,0.4-2.8,1.8-2.8,1.8L632.5,297.3z"/>
+                        
+                          <path class="st8 hover-fill" d="M615.1,299.6c0-2.7-6.9-3.3-9.1-5c-3-2.5-3-6.5-5.9-8.9c-1.4-1.1-2.6-1.7-4.5-1.8c-2.7-0.3-2-0.5-2.3,2.1
+                          c-0.1,0.5,0.4,1.4,0.3,2c0,0.7-1,1.4-0.9,2.2c0.1,1.4,1.6,2.8,2.9,3.3c-0.8,1.7-3.1,1.5-3.9,3.5c-0.9,2.2,0.5,3.8,2.3,4.8
+                          c3.6,2.2,9.1-1.7,12,0.6c1.8,1.4-0.1,3.1,1,4.7c1.3,1.9,2.9,1.7,4.9,0.6c3.7-2,4.8-6.1,2.9-9.3"/>
+                        
+                          <path class="st9" d="M655.3,378.6c-3-0.3-3,2.9-4.3,4.4c-1.6,1.9-4.1,2.8-5.2,5.1c-1.4,2.9,2.9,13.1,7.5,11c-0.1-0.6,0.2-1.4,0.1-2
+                          c1.2,0.6,1.7,2.3,3.4,2.7c1.5,0.4,3.1-0.7,4.6-1.3c1.3-0.5,3.8-0.5,4.5-1.9c1.1-2.1-1.7-2.2-2.4-3.9c-0.7-1.6,0.4-3,0.6-4.7
+                          c0.3-2.1-0.3-3.6-0.9-5.4C661.9,379,659.5,378.5,655.3,378.6"/>
+                       
+                          <path class="st10" d="M625.5,464.8c-2.5-0.6-4.7,0.5-7.1,0.2c-2.1-0.2-4.7-1.6-6.9-0.3c-1.1,0.7-1,1.7-1.8,2.5c-1,0.9-2.1,1.2-3.1,2
+                          c-1.9,1.5-3.1,2.9-0.7,4.9c1.8,1.4,4.8,1.6,6.6,2.8c1.9,1.2,3.3,2.6,5.8,2.5c2.3-0.1,4.4-1.6,6.8-1.8c2.8-0.3,4.6,0.2,6.9-2
+                          c2.1-2,5.8-4.8,2.5-7.2c-1.3-1-3.4-0.8-4.9-1.4c-1.7-0.7-2.9-1.9-4.8-2.2"/>
+                        
+                          <path class="st11" d="M790.5,408c-1.3-3.9-4.8,2.6-7.4-0.5c-1.8-2.1,1.1-6.2,0.3-9c-0.9-3.2-3.6-5.5-3-9.1c0.2-1.4,1.7-3,1.7-4.5
+                          c0.1-1.6-0.7-2.6-0.3-4.3c0.8-3.1,3-5.9,2.3-9.2c-0.7-3.2-2.3-5.9-1.5-9.3c0.7-3.2,1.6-5.5,0.4-8.8c-1.2-3.3-2.5-6.6-2.9-10.1
+                          c-0.2-2.3-0.9-4.4-1.1-6.8c-0.1-1.4-0.6-3.7-2.2-4.5c-0.1,0-0.4-0.5-0.4-0.6c-1.2,0.7-1.9,1.8-2.9,2.6c-1.3,0.9-3,0.8-4.2,1.6
+                          c-1.5,1.1-0.2,1.2-2.1,1.6c-1.1,0.2-3.2-0.8-4.3-1.2c-1.7-0.6-3.8-0.1-5.6,0c-1.9,0.1-3.2-0.9-5-1.2c-1.9-0.3-2.8,1-4.5,1.8
+                          c-1.8,0.8-1.9,1.2-3.9,0.8c-1.5-0.3-3.5-1.1-5-0.7c-1.3,0.4-2.8,1.8-3.8,2l-0.6-0.4c1.7,2.9-4.7,4.6-6.7,5.1
+                          c-3.8,0.9-5.2,1.9-6.7,5.1c-0.6,1.3-1.3,2.1-2.6,2.7c-0.8,0.4-1.3,0-2.2,0.6c-0.7,0.5-0.8,1.5-1.3,2c-2.9,3.1-5.1-1.1-8.3-0.3
+                          c-3.2,0.8-4.5,2.9-8.2,2.4c-4.7-0.5-3.4,2.1-6.4,4.3c-1.3,1-2.8,0.6-4,1.3c-1.8,1-1.2,2.1-1.7,3.7c-0.9,2.8-4.9,2.7-4.1,6.4
+                          c0.3,1.5,1.3,2.1,2.3,3.4c1.2,1.6,1.1,2.6,1,4.4c-0.1,1.7-0.3,2.9-0.9,4.5c-0.5,1.4-1.7,2.6-1.5,4c0.2,1.6,1.5,2.2,3,2.8
+                          c0.7,0.3,1.7,0.4,2.2,0.9c0.6,0.5,0.5,1.3,1.2,1.9c1.2,1,3.6,0,4.2,1.3c0.6,1.4-2,2.6-1.7,4.3c0.3,1.7,1.1,2.1,0.2,4.1
+                          c-0.9,2-1.8,1.8-3.4,3c-1.5,1-1,2.2-2,3.3c-0.5,0.5-1.3,0.1-1.8,0.9c-0.4,0.8,0.2,1.4,0.4,2.2c0.4,1.5,1.1,2.8,0.7,4.3
+                          c-0.2,0.9-0.6,1.7-0.8,2.4c-2.3,2.6-7.1,4-9.7,6.5c-3.2,3-4.5,7.4-4,11.2c0.6,4.9-1.7,5.7-3.7,9.5c-1.3,2.5,0.5,3.5,0.6,5.7
+                          c0.1,2.8-1.6,2.3-2.8,4c-3,4,2.7,6.9,4.9,9.7c1.2,1.6,1.1,3.9,1.7,5.8c0.6,2,1.7,3.8,3.1,5.5c2.4,3.2,3.1,7.1,4.2,10.8
+                          c0.6,2-0.9,4.5-0.4,6.2c0.3,0.9,1.5,1.4,1.8,2.3c0.3,1-0.7,2.4-0.3,3.1c0.7,1.2,4.7,1.4,5.9,1.5c1.7,0.3,4.6,1.5,6.4,1.4
+                          c2.9-0.2,3.1-2.4,3.4-4.4c0.3-1.8,1.4-3.4,1.7-5c0.7-5.8-5.7-1.6-8.8-3.9c-0.9-0.7-2.6-3.7-1.7-4.8c1-1.2,2,0.1,2.9-0.5
+                          c1-0.7,0.1-2.1,1.6-2.4c3-0.6,2.2,3.4,3.2,4.6c1.2,1.4,3.9,1.5,5.5,2.6c1.3,0.9,2.8,4.3,4.8,4c2.2-0.3,1-3.7,4-2
+                          c1.8,1,1.9,3.1,4.2,3.9c1.1,0.4,5,1.7,6.1,1.5c2.4-0.6,0.3-8.1,1.4-10.7c0.6-1.5,2.1-3.2,2.3-4.9c0.3-1.9-1.3-3.4,1.3-3.2
+                          c1.3,0.1,3.9,1.3,5.4,1.6c2.3,0.5,3.8,1.6,2.7,4c-0.7,1.4-2.3,2.4-3,3.8c-0.4,0.8-0.2,1.9-0.9,2.6c-0.8,0.8-2,0.5-2.8,1.3
+                          c-1.1,1.2-0.8,4.2,0,5.5c0.6,0.9,1.5,0.3,2,1.6c0.3,0.6-0.4,2.2-0.3,3.1c2.8,1.1,4.3-3,6-4.4c2-1.6,4.7-2.1,5.8-4.3
+                          c1.3-2.6-1.9-3.9-0.9-6.6c0.3-0.9,0.9-1.3,1.6-1.8c0.1,0.1,0.2,0.3,0.4,0.4c1.4-0.5,1.4-1.7,2.5-2.3c1.3-0.8,1.9-0.4,3.3-0.9
+                          c1.7-0.6,3.6-3.5,5.4-3.8c0.1,0.3,0.2,0.4,0.4,0.5c0.3,3.5,5.5-1.2,6.5-2.1c2-1.8,3.9-3.5,6.2-4.7c2.6-1.4,5.3-2.2,6.7-4.8
+                          c0.9-1.7,1.6-6.2,0.3-7.5c0-0.1,0.1-0.1,0.1-0.2h0.4c3.7,0.6,7.7-2.1,8.3-6.2c0.4-2.6,9.1-14.8,3.6-15.8l0.3-0.3c-0.2,0-0.4,0-0.6,0
+                          c-0.1-0.1-0.1-0.1-0.2-0.2c2.7-0.7,2.7-6.8,3.2-8.5c0.9-3.1,0.7-6.1,1.1-9.4c0.2-1.8,0.6-3.5,1.3-5.2
+                          C790.4,411.5,791,409.5,790.5,408z M685.4,419.6c0,0.1,0,0.2,0,0.2c0,0-0.1,0-0.1,0L685.4,419.6z"/>
+                      </svg>                      
+                </div>
+            </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="inner footer-inner">
+            <div class="footer-logo">
+                <img src="images/logos/dongbang_color_logo.png" alt="">
+            </div>
+            <div class="info">
+                <p>&#40;주&#41;동방 서울특별시 중구 통일로 2길 16 AIA타워 3층<br>
+                대표전화 : &#91;영업대표&#93; 02&#45;2190&#45;8300<br>
+                &#91;경영지원&#93;02&#45;2190&#45;8100</p>
+                <span class="small-copy">Copyright &copy; Dongbang Transport Logistics Co., Ltd All rights reserved.</span>
+            </div>
+            <div class="other-info">
+                <a href="#none">회사소개</a>
+                <span class="bar2">&#124;</span>
+                <a href="#none">투자정보</a>    
+            </div>
+            <div class="family-site">
+                <select id="family-sites" onchange="location = this.value;">
+                    <option value="">Family Site</option>
+                    <option value="https://example1.com">동방물류</option>
+                    <option value="https://example2.com">동방철강</option>
+                    <option value="https://example3.com">동방웹진</option>
+                    <option value="https://example4.com">동방에스엔디</option>
+                    <option value="https://example5.com">동방로지스틱스</option>
+                 </select>                 
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="js/header.js"></script>
+    <script src="js/about-dongbang.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/company-location.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/modal-accordion.js"></script>
+    <script src="js/webzine.js"></script>
+    <script src="js/webzine-tab.js"></script>
+</body>
+
+</html>

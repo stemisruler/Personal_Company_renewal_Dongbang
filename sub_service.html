@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서비스 신청</title>
+    
+    <!-- j query -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- xeicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <!-- pretendard -->
+    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/subpage-css/subpage-footer.css">
+    <link rel="stylesheet" href="css/subpage-css/sub-common.css">
+    <link rel="stylesheet" href="css/subpage-css/service.css">
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <link rel="stylesheet" href="css/header-responsive.css">
+    <link rel="stylesheet" href="css/modal-responsive.css">
+    <link rel="stylesheet" href="css/subpage-css/service-responsive.css">
+    <link rel="stylesheet" href="css/footer-responsive.css">
+    
+
+</head>
+
+<body>
+    <!-- 사이트맵 모달 -->
+
+    <div id="modal-background"></div>
+    <div id="myModal" class="modal">
+        <h1>사이트맵</h1>
+        <span id="modal-quit">X</span>
+        <div class="modal-content">
+            <ul class="modal-menu">
+                <li>
+                    <a href="#none">회사소개</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li><a href="#none">CEO인사말</a></li>
+                                <li><a href="#none">동방이념</a></li>
+                                <li><a href="#none">동방연혁</a></li>
+                                <li><a href="#none">비전</a></li>
+                                <li><a href="#none">사업장현황</a></li>
+                                <li><a href="#none">장비현황</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">투자정보</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li> <a href="#none">공시정보</a></li>
+                                <li> <a href="#none">재무정보</a></li>
+                                <li> <a href="#none">IR담당자</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">주요사업</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li> <a href="#none">컨테이너</a></li>
+                                <li> <a href="#none">벌크</a></li>
+                                <li> <a href="#none">터미널</a></li>
+                                <li> <a href="#none">유통물류</a></li>
+                                <li> <a href="#none">철강</a></li>
+                                <li> <a href="#none">포워딩</a></li>
+                                <li> <a href="#none">해상풍력</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">동방웹진</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li> <a href="#none">칼럼</a></li>
+                                <li> <a href="#none">뉴스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">고객지원</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li> <a href="#none">고객지원</a></li>
+                                <li> <a href="#none">사이버신문고</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">채용정보</a>
+                    <div class="modal-sub-menu">
+                        <div class="modal-sub-menu-inner">
+                            <ul class="modal-sub">
+                                <li> <a href="#none">채용공고</a></li>
+                                <li> <a href="#none">인재상</a></li>
+                                <li> <a href="#none">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="header">
+        <a href="index.html" class="logo_link">
+            <img src="images/logos/dongbang_white_logo.png" alt="" class="header_logo_image"></a>
+        <div class="header-gnb">
+            <ul class="menu">
+                <li>
+                    <a href="#none">회사소개</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">CEO인사말</a></li>
+                                <li> <a href="#none">동방이념</a></li>
+                                <li> <a href="#none">동방연혁</a></li>
+                                <li> <a href="#none">비전</a></li>
+                                <li> <a href="#none">사업장현황</a></li>
+                                <li> <a href="#none">장비현황</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">투자정보</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">공시정보</a></li>
+                                <li> <a href="#none">재무정보</a></li>
+                                <li> <a href="#none">IR담당자</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">주요사업</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">컨테이너</a></li>
+                                <li> <a href="#none">벌크</a></li>
+                                <li> <a href="#none">터미널</a></li>
+                                <li> <a href="#none">유통물류</a></li>
+                                <li> <a href="#none">철강</a></li>
+                                <li> <a href="#none">포워딩</a></li>
+                                <li> <a href="#none">해상풍력</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">동방웹진</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">칼럼</a></li>
+                                <li> <a href="#none">뉴스</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">고객지원</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">고객지원</a></li>
+                                <li> <a href="#none">사이버신문고</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#none">채용정보</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-inner">
+                            <ul class="sub">
+                                <li> <a href="#none">채용공고</a></li>
+                                <li> <a href="#none">인재상</a></li>
+                                <li> <a href="#none">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- 서브메뉴 바탕색용 div -->
+            <div class="sub-menu-bg"></div>
+        </div>
+        </div>
+        <div class="lang">
+            <a href="#none">ENG</a>
+            <span class="bar">&#124;</span>
+            <a href="#none">CN</a>
+        </div>
+        <div class="sitemap">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+
+    </header>
+    
+    <div class="sub-visual">
+        <div class="sub-main-image">
+            <img src="images/sub_main_image.jpg" alt="">
+        </div>    
+        <h1>QUICK MENU</h1>
+        <p>글로벌 물류 기업으로 도약하는 동방은 고객의 가치를 존중합니다.</p>
+    </div>
+    <div class="sub-visual-menu-bar">
+        <div class="inner sub-visual-menu-bar-container">
+            <ul>
+                <li><a href="sub_tracking.html">화물 추적</a></li>
+                <li><a href="sub_service.html" class="active2">서비스 신청</a></li>
+                <li><a href="#none">투자 정보</a></li>
+                <li><a href="#none">동방 웹진</a></li>
+                <li><a href="#none">최신 뉴스</a></li>
+                <li><a href="#none">채용 공고</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="inner sub-bar">
+        <h3>서비스 신청</h3>
+        <ul>
+            <li><a href="index.html"><i class="xi-home"></i></a></li>
+            <span class="right-arrow">></span>
+            <li><a href="#"><span>자주 찾는 메뉴</span></a></li>
+            <span class="right-arrow">></span>
+            <li><a href="#"><span>서비스 신청</span></a></li>
+        </ul>
+    </div>
+<!-- sub visual 끝 -->
+<main class="main-service">
+    <div class="notice">
+        <span class="notice-span">
+            서비스 신청 확인 및 답변은 기재해 주신 이메일로 발송될 예정이니<br>
+            이메일 주소를 정확하게 기재해 주시기 바랍니다.
+        </span>
+    </div>
+   <form class="service-form">
+    <div class="service-select-area">
+        <span class="asterisk">문의 유형</span>
+        <div class="service-select-box">
+            <div class="service-box selected">
+                <span>컨테이너</span>
+            </div>
+            <div class="service-box">
+                <span>벌크</span>
+            </div>
+            <div class="service-box">
+                <span>터미널</span>
+            </div>
+            <div class="service-box">
+                <span>유통물류</span>
+            </div>
+            <div class="service-box">
+                <span>철강운송</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="input-areas">
+
+        <div class="name-phone-section">
+            <div class="name-section">
+                <div class="input-subtitle"><span class="asterisk">이름</span></div>
+                <div class="name-input"><input type="text" required class=""></div>
+            </div>
+            <div class="phone-section">
+                <div class="input-subtitle"><span>연락처</span></div>
+                <div class="phone-input"><input type="text" class=""></div>
+            </div>
+        </div>
+        <div class="input-single-area">
+            <div class="input-subtitle"><span class="asterisk">E-mail</span></div>
+            <div class="input-textbox"><input type="email" required class=""></div>
+        </div>
+        <div class="input-single-area">
+            <div class="input-subtitle"><span class="asterisk">제목</span></div>
+            <div class="input-textbox"><input type="text" required class=""></div>
+        </div>
+        <div class="input-single-area">
+            <div class="input-subtitle"><span class="asterisk">내용</span></div>
+            <div class="input-textbox"><textarea required placeholder="동방에 관심을 갖고 홈페이지를 찾아주셔서 진심으로 감사합니다.&#10;접수하시는 서비스 신청 문의에 폭언, 욕설, 비방, 동일 내용 반복, 의도적 업무 방해 등이 포함되어 있을 경우&#10;<산업안전보건법>에 따라 삭제될 수 있음을 알려드립니다. &#10;동방에 많은 성원과 응원 부탁드립니다.&#10;감사합니다."></textarea></div>
+        </div>
+        <div class="input-file-area">
+            <div class="input-subtitle"><span>첨부파일</span></div>
+            <div class="input-file-box">
+                <input type="file" id="fileInput" multiple accept=".txt,.jpg,.jpeg,.pdf, .png, .doc, .xlsx" style="display: none;">
+                <button id="uploadButton" type="button">등록하기</button>
+                <p id="fileList"></p>
+
+            </div>
+        </div>
+        <div class="input-single-area">
+            <div class="input-subtitle"><span>개인정보 수집 동의</span></div>
+            <div class="input-agree-textbox">
+                <p>
+                    <br>
+                    1. 동방은 귀하의 문의 접수 및 처리를 위해 개인 정보를 수집하고자 합니다.
+                  </p>
+                <p>
+                    <br>
+	                2. 수집 대상 개인정보는 다음과 같습니다: 이름, 이메일 주소, 서비스 이용기록,
+	                 접속 로그, 접속 IP 정보, 핸드폰 또는 유선전화번호(선택 사항)
+	                </p>
+                <p>
+                    <br>
+                    3. 수집한 개인 정보는 문의 처리를 위한 목적으로만 활용되며, 이후 즉시 삭제합니다.
+                  </p>
+                <p>
+                    <br>
+                    수집항목 : 이름, 휴대전화번호, 이메일, 회사전화번호, 서비스
+                    이용기록, 접속 로그, 접속 IP 정보
+                  </p>
+            </div>
+            
+            <div class="input-checkbox-area">
+                <div class="agree-question">
+                    <span>개인정보 수집에 동의 하십니까?</span>
+                </div>
+                <div class="input-radio-box">
+                    <input type="radio" id="sample-radio-id1" name="ackYn" value="Y" checked="">
+                    <label for="sample-radio-id1" class="navy">
+                        <span>&nbsp;&nbsp;예&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                      </label>
+                      <input type="radio" id="sample-radio-id2" name="ackYn" value="N">
+                      <label for="sample-radio-id2" class="navy right">
+                        <span>&nbsp;&nbsp;아니오</span>
+                      </label>
+                </div>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button type="submit" class="submit">
+                <span>등록하기</span>
+            </button>
+            <button type="reset" class="cancle">
+                <span>취소하기</span>
+            </button>
+        </div>
+    </div>
+   </form>
+</main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="inner footer-inner">
+            <div class="footer-logo">
+                <img src="images/logos/dongbang_color_logo.png" alt="">
+            </div>
+            <div class="info">
+                <p>&#40;주&#41;동방 서울특별시 중구 통일로 2길 16 AIA타워 3층<br>
+                    대표전화 : &#91;영업대표&#93; 02&#45;2190&#45;8300<br>
+                    &#91;경영지원&#93;02&#45;2190&#45;8100</p>
+                <span class="small-copy">Copyright &copy; Dongbang Transport Logistics Co., Ltd All rights
+                    reserved.</span>
+            </div>
+            <div class="other-info">
+                <a href="#none">회사소개</a>
+                <span class="bar2">&#124;</span>
+                <a href="#none">투자정보</a>
+            </div>
+            <div class="family-site">
+                <select id="family-sites" onchange="location = this.value;">
+                    <option value="">Family Site</option>
+                    <option value="https://example1.com">동방물류</option>
+                    <option value="https://example2.com">동방철강</option>
+                    <option value="https://example3.com">동방웹진</option>
+                    <option value="https://example4.com">동방에스엔디</option>
+                    <option value="https://example5.com">동방로지스틱스</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+    <script src="js/header.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/modal-accordion.js"></script>
+    <script src="js/sub-js/service.js"></script>
+</body>
+
+</html>

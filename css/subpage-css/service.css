@@ -1,0 +1,305 @@
+input, select{
+    
+    width: 100%;
+    min-width: 85px;
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    border: 1px solid #e4e7eb;
+    background-color: #fff;
+    line-height: 36px;
+    font-size: 14px;
+    color: #232b33;
+
+}
+
+.service-select-area {
+    margin: 0 auto;
+    width: 856px;
+    height: 71px;
+    margin-bottom: 60px;
+}
+
+.notice {
+    margin: auto;
+    width: 856px;
+    height: 82px;
+    border-width: 1px 0px; /* 상하 1, 좌우 0 */
+    border-style: solid;
+    border-color: #d0d0d0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.notice .notice-span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #323232;
+    
+}
+
+
+.asterisk {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    color: #010a5a;
+}
+
+.asterisk::after{
+    content: '';
+    background-image: url(https://www.hmm21.com/images/company/contact-us/asterisk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    margin-left: 2px;
+}
+
+.service-select-box{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;    
+
+}
+
+.service-box {
+    width: 140px;
+    height: 44px;
+    border: 1px solid #a2a5ad;
+    padding: 13px 0px 12px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.service-box span{
+    color: #9d9d9d
+}
+.service-box:hover{
+    border:1px solid #010a5a;
+}
+.service-box:hover span {
+    color: #010a5a;
+    font-weight: 700;
+}
+
+.service-box.selected{
+    background-color: #010a5a;
+}
+.service-box.selected span{
+    color: #fff;
+    font-weight: 700;
+}
+
+.input-areas{
+    width: 856px;
+    margin: auto;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    height: 40px;
+    padding: 11.5px 16px;
+    background-color: #fff;
+    border: 1px solid #d0d0d0;
+    box-sizing: border-box;
+}
+
+.input-areas span{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    color: #010a5a;
+}
+
+.input-subtitle{
+    margin-bottom: 5px;
+}
+
+.name-phone-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.name-section, .phone-section{
+    width: 48%;
+}
+
+.input-single-area{
+    margin-top: 30px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 132px;
+    height: 200px;
+    padding: 10px 16px;
+    background-color: #fff;
+    border: 1px solid #d0d0d0;
+    min-width: 300px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.input-file-area{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-file-box input{
+    border: 1px none #000;
+    width: fit-content;
+}
+
+input[type="file"]{
+    border: 1px none #000;
+    background-color: red;
+}
+
+
+#uploadButton {
+    padding: 10px 20px;
+    color: #a2a5ad;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 32px;
+    border: 1px solid #a2a5ad;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#uploadButton:hover{
+    background-color: var(--point-color2);
+    color: white;
+
+}
+
+#fileList p{
+    font-size: 10px;
+    font-weight: 300;
+    color: #a2a5ad;
+}
+
+/* 동의 묻기 */
+.input-agree-textbox {
+    padding: 20px 16px;
+    background: #ffffff;
+    overflow: auto;
+    height: 200px;
+    border: 1px solid #d0d0d0;
+}
+
+.input-agree-textbox p{
+    font-size: 14px;
+    color: #131313;
+    text-align: left;
+}
+
+/* 체크박스 */
+.input-checkbox-area{
+    margin-top: 30px;
+    text-align: center;
+
+}
+.agree-question{
+    text-align: center;
+}
+.agree-question span{
+    color: #9d9d9d;
+}
+
+.input-checkbox-area .input-radio-box {
+    display: inline-block;
+    margin: 10px auto auto;
+}
+
+.input-checkbox-area .input-radio-box input + label {
+    background-repeat: no-repeat;
+    background-position: left;
+    display: inline-block;
+    padding: 0 0 0 20px;
+    min-height: 24px;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.input-checkbox-area .input-radio-box input[type="radio"], .input-checkbox-area .input-radio-box input[type="checkbox"] {
+    display: none;
+}
+
+.input-checkbox-area .input-radio-box input[type="radio"] + label.navy {
+    background-image: url(https://www.hmm21.com/images/company/common/icon-radio-off.png);
+}
+.input-checkbox-area .input-radio-box input[type="radio"]:checked + label.navy{
+    background-image:url(https://www.hmm21.com/images/company/common/icon-radio-on.png)
+}
+
+.navy span{
+    line-height: 30px;
+}
+
+#sample-radio-id1{
+    margin-left: 60px;
+    margin-right: 30px;
+}
+
+#sample-radio-id2{
+    margin-left: 30px;
+}
+
+.btn-group{
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.btn-group button{
+    width: 220px;
+    height: 54px;
+    border: 1px solid #a2a5ad;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+
+.btn-group button span{
+    font-size: 1rem;
+
+}
+.btn-group button:first-child, .btn-group button:first-child span,
+.btn-group button:hover, .btn-group button:hover span {
+    color: #ffffff;
+    background-color: #484b6a;
+}
+
+.btn-group button:active, .btn-group button:active span{
+    background-color: #373a53;
+}
+
+.notice {
+    opacity: 0;
+    animation : slideUp 1s forwards;
+    animation-delay: 2s;
+}
+
+.service-form{
+    opacity: 0;
+    animation : slideUp 1s forwards;
+    animation-delay: 2s;
+
+}

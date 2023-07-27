@@ -1,0 +1,81 @@
+.st0, .st1, .st2, .st3, .st10, .st11, .st4, .st5, .st6, .st7, .st8, .st9{
+    fill:rgb(175, 171, 171);
+    cursor: pointer;
+
+}    
+
+.company-location-inner{
+    margin: auto;
+    height: 792px;
+    position: relative;
+    text-align: center; 
+}
+.company-location > h2{
+    margin: 0;
+}
+
+#Layer_1 {
+    position: relative;
+    height: 100%;
+    margin: auto;
+    transform: scale(1.5);
+    z-index: 1;
+    margin-left: 2.5%;
+}
+
+#text-container0,
+#text-container1,
+#text-container2,
+#text-container3,
+#text-container4 {
+    display: none;
+    position: absolute;
+    font-size: 1rem;
+    background-color: white;
+    border: 3px dotted #343A90;
+    border-radius: 15px;
+    padding: 1rem;
+
+}
+
+#text-container0 p,
+#text-container1 p,
+#text-container2 p,
+#text-container3 p,
+#text-container4 p{
+    line-height: 1.3rem;
+}
+
+#text-container0{
+    left: 15%;
+    top: 20%;
+    display: block;
+}
+
+#text-container1{
+    left: 15%;
+    top: 40%;
+}
+#text-container2{
+    left: 15%;
+    top: 60%;
+}
+#text-container3{
+    right: 15%;
+    top: 20%;
+}
+#text-container4{
+    right: 15%;
+    top: 60%;
+}
+
+path{
+    stroke: white;
+    stroke-width: 1;
+    transition: 0.5s;
+}
+
+  .hover-fill {
+    fill: #162E74;
+  }
+  

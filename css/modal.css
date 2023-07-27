@@ -1,0 +1,133 @@
+.modal {
+    position: fixed;
+    margin-top : 20px;
+    padding : 20px;
+    background : #eee;
+    text-align : left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #CCCCCC;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+    z-index: 111;
+    width: 800px;
+    height: 340px;
+    display: none;
+  }
+
+  #modal-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 110; /* Ensure this is below the modal's z-index */
+    backdrop-filter: blur(2px);
+
+}
+
+  .modal h1{
+    position: absolute;
+    left: 50%;
+    top: -18%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: var(--menu-size);
+    font-weight: var(--menu-weight);
+    z-index: 111;
+  }
+  .modal > span{
+    position: absolute;
+    left: 94%;
+    top: -15%;
+    color: white;
+    border: 1px none #000;
+    background-color: none;
+    font-size: var(--about-number-size);
+    font-weight: var(--menu-weight);
+    z-index: 111;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .modal > span:active{
+    color: var(--point-hover1);
+  }
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    border-radius: 1rem;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+ .modal-menu{
+    display: flex;
+ }
+ .modal-menu > li{
+    flex: 1;
+ }
+
+ .modal-menu > li > a{
+    display: block;
+    font-size: var(--gnb-size);
+    font-weight: var(--title-weight);
+    margin: 1rem;
+    text-align: center;
+    border: 1px none #000;
+    border-radius: 0.5rem;
+    padding:0.2rem 0;
+    background-color: rgb(226, 224, 224);
+ }
+
+ .modal-menu > li > a:hover{
+    color: var(--point-color2);
+ }
+ .modal-sub{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    text-align: center;
+    line-height: 2;
+ }
+
+ .modal-sub > li > a {
+    display: block;
+ }
+
+ .modal-sub > li > a:hover {
+    color: var(--point-color2);
+ }
+
+ .modal-sub ul{
+    flex: 1;
+
+ }
+ .modal-sub ul > li{
+    flex: 1;
+
+ }
+ .modal-sub > ul > li > a{
+    display: block;
+    padding: 1rem;
+ }
+
+ .modal-sub > ul > li:hover {
+    background-color: var(--point-hover2);
+ }
+
+ .modal-menu > li > a:active, .modal-sub > li > a:active{
+    color: var(--point-hover2);
+  }
+
+  .modal-sub{
+   display: block;
+  }

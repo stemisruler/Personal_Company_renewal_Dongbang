@@ -1,0 +1,181 @@
+@media (max-width: 1690px) {
+
+  /* margin top을 이용해 text container에서 상단과 거리를 벌려 정렬을 맞췄다 h4, p, a(버튼). */
+  .biz-text-container>h4 {
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 600;
+  }
+
+  .biz-text-container>p {
+    font-size: 0.8rem;
+    color: white;
+    opacity: 0;
+    font-size: 0;
+    margin: 0;
+    font-weight: 400;
+    transition: opacity 0.5s
+  }
+
+  .biz-text-container>p.on {
+    opacity: 1;
+    font-size: 1rem;
+    margin: 2rem;
+
+  }
+
+}
+
+@media (max-width: 1428px) {
+  .primary-business {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    background: url("../images/primary_business_container_bright.png") no-repeat center 60% / cover;
+    transition: 0.5s;
+  }
+
+  .primary-business-inner {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+  }
+
+  .biz-area {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 40%);
+
+  }
+
+  .biz-area:hover {
+    background-color: rgba(2, 2, 2, 80%);
+  }
+
+  .biz-text-container {
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+  }
+
+  /* margin top을 이용해 text container에서 상단과 거리를 벌려 정렬을 맞췄다 h4, p, a(버튼). */
+  .biz-text-container>h4 {
+    font-size: var(--primary-business-size);
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .biz-text-container>p {
+    font-size: 0.8rem;
+    color: white;
+    opacity: 0;
+    font-size: 0;
+    margin: 0;
+    font-weight: 400;
+    transition: opacity 0.5s
+  }
+
+  .biz-text-container>p.on {
+    opacity: 1;
+    font-size: 1rem;
+
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .biz-text-container>h4 {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 600;
+  }
+
+  .biz-text-container>p {
+    font-size: 0.8rem;
+    color: white;
+    opacity: 0;
+    font-size: 0;
+    margin: 0;
+    font-weight: 400;
+    transition: opacity 0.5s
+  }
+
+  .biz-text-container>p.on {
+    opacity: 1;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 840px) {
+
+  .biz-text-container>h4 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+  }
+
+  .biz-text-container>p {
+    font-size: 0.8rem;
+    color: white;
+    opacity: 0;
+    font-size: 0;
+    margin: 0;
+    font-weight: 400;
+    transition: opacity 0.5s
+  }
+
+  .biz-text-container>p.on {
+    opacity: 1;
+    font-size: 0.7rem;
+    margin: 1rem;
+    word-wrap: wrap;
+
+
+  }
+}
+
+@media (max-width: 700px) {
+
+  .biz-text-container>h4 {
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 600;
+  }
+
+  .biz-text-container>p {
+    font-size: 0.9rem;
+    color: white;
+    opacity: 0;
+    font-size: 0;
+    margin: 0;
+    font-weight: 400;
+    transition: opacity 0.5s
+  }
+
+  .biz-text-container>p.on {
+    opacity: 1;
+    font-size: 0.9rem;
+    margin: 1rem;
+    word-wrap: wrap;
+  }
+}

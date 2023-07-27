@@ -1,0 +1,57 @@
+@media (max-width: 1124px) {
+    .about-dongbang{
+        background-size: cover;
+        background-position-x: 30%;
+      }
+
+    .chain{
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .about-dongbang{
+        margin-top: 2rem;
+        height: 900px;
+        position: relative;
+        background-image: url(../images/ship1.png);
+        background-size: cover;
+        background-position-x: 30%;
+      }
+    
+    .chain{
+        display: none;
+    }
+
+    .about-dongbang-inner{
+        height: 600px;
+        position: relative;
+        top: 24%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+      .about-dongbang >h2{
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        left: 50%;
+        top: 5%;
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+      
+      .about-dongbang >p{
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        transform: translateX(-50%);
+        z-index: 1;
+      
+      }
+      
+    
+}
+
+

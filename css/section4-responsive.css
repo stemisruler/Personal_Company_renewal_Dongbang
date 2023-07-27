@@ -1,0 +1,68 @@
+
+@media (min-width: 1281px) {
+    .tabs {
+      display: none;
+    }
+  
+    .webzine-box {
+      display: block;
+    }
+    
+  }
+  
+  @media (max-width: 1280px) {
+    .tabs {
+      display: flex;
+    }
+    
+    .webzine-box {
+      display: none;
+    }
+      
+    .webzine-preview-first{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 500px;
+        
+      }
+      
+      .webzine-textbox-first > h4{
+       text-align: left;
+      }
+      
+      .webzine-textbox-first > .webzine-preview{
+        text-align: left;
+      }
+      
+  }
+  
+  @media (max-width: 600px) {
+      
+    .webzine-preview-first{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 300px;
+        
+      }
+      
+      .webzine-textbox-first > h4{
+        position: absolute;
+        left: 10%;
+        top: 112%;
+      
+      }
+      
+      .webzine-textbox-first > .webzine-preview{
+        position: absolute;
+        left: 10%;
+        bottom: -54%;
+      }
+
+      .webzine-title.small{
+        font-size: 1rem;
+      }
+      
+      
+  }

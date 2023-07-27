@@ -1,0 +1,190 @@
+/******* header *******/
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    z-index: 5;
+}
+
+/* 로고 스타일 */
+.header .logo-link .header-logo-image {
+    width: 229px;
+    height: 30px;
+    align-self: center;
+}
+
+/* 메인 메뉴 스타일링 */
+.header-gnb {
+  display: flex;
+}
+
+.header-gnb > li {
+  color: #fff;
+  padding: 15px;  /* ???  뺄 수 있으면 빼기 */
+  position: relative; 
+
+}
+
+.header-gnb > li > a {
+  color: #fff;
+  padding-bottom: 10px; /* ??? */
+}
+
+.header .header-gnb li a{
+  color: white;
+}
+
+/* 서브 메뉴 스타일링 */
+.header-snb {
+  display: none; /* 서브 메뉴를 보이게 하려면 이 부분을 변경해야 합니다. */
+  position: absolute; /* fixed 대신 absolute로 변경 */
+  top: 100%; /* 메인 메뉴 아래에 위치하도록 설정 */
+  left: 25%; /* 메인 메뉴 항목의 왼쪽 끝에서 시작 */
+  background-color: rgba(0,0,0,0.8); 
+}
+
+
+.header-gnb > li > .menu >li {
+  width: fit-content;
+}
+
+.header-gnb > li > .menu > li > a {
+  display: inline-block;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+
+/* 언어 선택 및 햄버거 메뉴 스타일 */
+.header .lang {
+  position: relative;
+  left: 8%;
+
+}
+
+.header .lang a, .bar{
+    color: white;
+}
+.header .sitemap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.header .sitemap .line {
+    height: 2px;
+    background-color: white;
+}
+
+.header .header-gnb li a{
+    font-size: var(--gnb-size);
+    font-weight: var(--menu-weight);
+    padding: 2rem;
+}
+/* 스크롤이 내려갔을 때의 헤더 스타일 */
+.header.scrolled {
+  z-index: 15;
+  background-color: rgb(255, 255, 255);
+}
+
+.header.scrolled li a, .header.scrolled .lang a, .header.scrolled .lang .bar, .header.scrolled > .header-gnb > li > .header-snb >li > a{
+    color: black;
+
+}
+
+.header.scrolled .header-snb {
+  background-color: grey;
+} 
+.sitemap.black .line {
+    background-color: black;
+}
+
+.header-gnb .menu>li{text-align: center; flex: 1;  position:relative;}
+
+.menu{
+  display: flex;  
+  justify-content: space-between;
+  position: relative;
+  left: 9.3%;
+  }
+
+  .menu > li > a::after{
+    position: absolute;
+    content: '';
+    top: 54px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 3px;
+    background-color: var(--point-color2);
+    z-index: 101;
+    transition: 0.5s;
+
+  }
+  .menu > li > a:hover::after{
+    width: 50%;
+  }
+/* sub-menu */
+.sub-menu{
+  width: 140px; height:0; /* 140px 200px */
+  position: absolute; 
+  top: 47px;
+  left: 0; 
+  transition: .4s;
+  z-index: 100;
+}
+.sub-menu-inner{
+  width: 140px; height:0; /* 140px 200px */
+  z-index: 100; position: absolute; 
+  line-height: 2.1;
+  padding-top: 10px;
+}
+.sub-menu-inner>ul{overflow: hidden; height: 0;transition: .4s;} /* height 200px */
+.sub-menu-inner>ul>li{position: relative;}
+
+.sub-menu-inner > .sub > li > a{
+  color: black; 
+  font-size: 1rem;
+  padding: 0;
+  font-weight: normal;
+  display: block;
+}
+/* 메인메뉴 호버 */
+.menu>li>a:hover {
+  color: var(--point-color2);
+}
+/* 서브메뉴 호버 */
+.sub-menu-inner>ul>li>a:hover{
+  color: white;
+  background-color: var(--point-color2);
+}
+
+.sub-menu-inner>ul>li>a:active{
+  background-color: var(--point-hover2);
+}
+/* 서브메뉴 뒷배경 */
+.sub-menu-bg{
+  width: 100%;
+  height: 0; /* height 220px */
+  z-index: 0;
+  position: absolute;
+  background-color: #c5c1c1d3;
+  top: 85px;
+  left: 0;
+  transition: .4s;
+}
+
+

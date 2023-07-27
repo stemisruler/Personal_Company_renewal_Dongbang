@@ -1,0 +1,122 @@
+.dataTables_wrapper .dataTable td, .dataTables_wrapper .dataTable th {
+    border-right: 3px solid rgba(255, 255, 255, 0.5); 
+}
+
+.dataTables_wrapper .dataTable tr td:last-child, .dataTables_wrapper .dataTable th:last-child {
+    border: none;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    float: none;
+    text-align: center;
+}
+.dataTables_filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+div.dataTables_filter input {
+    border: 1px solid #1D4691;
+    vertical-align: middle;
+    width: 140px;
+    height: 34px;
+    border-radius: 14px;
+    margin-top: auto;
+    margin-bottom: auto; /* 검색: 글자랑 가운데 정렬 맞추려고 여러가지 시도함 */
+    padding-left: 10px; /* 검색창에서 너무 왼쪽에서 시작돼서 brrr에 가려져서 왼쪽에서 좀 띄움. */
+
+}
+
+.tables{
+        display: none;
+    }
+ .dataTables_wrapper .dataTables_paginate {
+    text-align: center;
+    float: none;
+    margin-top: 1rem;
+    border: 1px none #000;
+ }
+
+td,
+th {
+	text-align: center;
+}
+
+ table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting {
+    background-image: none;
+    cursor: auto;   
+}
+
+th {
+	background: #234594;
+	color: #fff;
+}
+
+table.dataTable tbody tr:nth-child(odd) {
+    background-color: #D6EAF8;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous,
+.dataTables_wrapper .dataTables_paginate .paginate_button.next {
+    border: 1px none #000;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.next.disabled{
+    color: rgb(199, 199, 199) !important;
+    background-color: none !important;
+    border: 1px none #000;
+}
+.dataTables_wrapper .no-footer{
+    width: 60%;
+}
+
+.radio-box{
+    opacity: 0;
+    animation: slideUp 1s forwards;
+    animation-delay: 2s;
+
+}
+
+#myInput{
+    opacity: 0;
+    animation: slideUp 1s forwards;
+    animation-delay: 2s;
+
+}
+
+button.retreve{
+    opacity: 0;
+    animation: slideUp 1s forwards;
+    animation-delay: 2s;
+    cursor: pointer;
+
+}
+@media screen and (max-width:780px) {
+    .dataTables_wrapper .no-footer td, .dataTables_wrapper .no-footer th{
+        font-size: 0.6rem;
+
+    }
+}
+
+@media screen and (max-width: 640px){
+.dataTables_wrapper .dataTables_filter {
+    margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 597px){
+    #myInput{
+        margin-top: 1.2rem;
+    
+    }
+
+
+}

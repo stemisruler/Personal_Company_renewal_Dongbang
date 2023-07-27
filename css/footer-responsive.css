@@ -1,0 +1,57 @@
+@media (max-width: 900px) {
+    .footer{
+        position: relative;
+        margin-top: 2rem;
+        border-top: 1px solid #ebebeb;
+        z-index: 10;
+        height: 200px;
+
+      
+      }
+      .footer-inner{
+        display: grid;
+        grid-template-areas: 
+        'family-site'
+        'info';
+        margin-top: 1rem;
+        justify-content: center;
+      }
+      
+      .footer-logo{
+        display: none;
+      }
+      .info{
+          grid-area: info;
+      }
+      .info p{
+        text-align: left;
+      }
+      .info .small-copy{
+        font-size: var(--small-size);
+        font-weight: var(--small-weight);
+        color: var(--gray-color);
+      }
+      .other-info{
+        display: none;
+    }
+      .family-site{
+
+          grid-area: family-site;
+          text-align: center;
+      }
+      
+      #family-sites {
+        width: 100%;
+        border: 1px solid #cccccc; 
+        border-radius: 5px;
+        background-color: #ffffff; 
+        padding: 5px !important;
+        color: #000000;
+        margin-bottom: 1rem;
+        padding: 0.7rem;
+
+      }
+      #family-sites option{
+        text-align: center;
+      }
+}

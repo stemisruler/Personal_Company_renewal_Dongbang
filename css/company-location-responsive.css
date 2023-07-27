@@ -1,0 +1,50 @@
+@media (max-width: 1428px) {
+
+    
+#Layer_1 {
+    position: absolute;
+    left: 51%;
+    top: 50%;
+    height: 100%;
+    margin: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#text-container0{
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    width: 90%;
+
+}
+
+#text-container1{
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    width: 90%;
+
+}
+#text-container2{
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    width: 90%;
+
+}
+#text-container3{
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    width: 90%;
+
+}
+#text-container4{
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+
+
+}

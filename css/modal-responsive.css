@@ -1,0 +1,52 @@
+@media screen and (max-width: 840px) {
+    .modal {
+      top: 0;
+      left: 100%; /* 처음에 화면 바깥에 위치시킴 */
+      transform: none;
+      width: 70%; /* 화면의 70%만큼 차지 */
+      height: 100%; /* 세로로는 100% */
+      display: block;
+      margin-top: 0;
+      border-radius: 0;
+    }
+    
+    .modal-content {
+      margin-top: 2rem;
+        height:600px;
+        overflow: hidden;
+      }
+    
+    .modal > span{
+        position: absolute;
+        left: 90%;  
+        top: 0%;
+        color: black;
+        border: 1px none #000;
+        background-color: none;
+        font-size: var(--about-number-size);
+        font-weight: var(--menu-weight);
+        z-index: 111;
+        cursor: pointer;
+        user-select: none;
+    
+    }
+
+    .modal-menu{
+      display: flex;
+      flex-direction: column;
+    }
+    .modal-menu >li{
+      position: relative;
+    }
+    .modal-sub{
+      overflow: hidden;
+      }
+    .active {
+      background-color: #f0f0f0;
+      }
+      .active .modal-sub{
+        max-height: 100%; 
+      }
+      
+  }
+  

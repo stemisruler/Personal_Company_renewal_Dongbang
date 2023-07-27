@@ -1,0 +1,678 @@
+
+/* 변수 선언 */
+:root{
+    /* size */
+
+    --small-size : 0.75rem;
+    --gnb-size : 1.375rem; /* 22px */
+    --menu-size: 2rem;
+    --primary-business-size: 1.88rem;
+    --about-number-size:2.50rem;
+    --news-title-size:1.25rem; /* 20px */
+    --news-preview-size:0.88rem;
+    --news-date-size:0.63rem;
+
+    /* color */
+    --point-color1:#F2511F;
+    --point-color2:#1D4691;
+    --point-hover1:#d84616;
+    --point-hover2:#162E74;
+    --gray-color:#808080;
+
+    /* weight */
+
+    --menu-weight:600;
+    --small-weight:300;
+    --title-weight:500;
+    --about-number-weight:600;
+
+}
+
+/* common */
+*{
+    
+    font-family: 'pretendard';
+    font-size: 16px;
+}
+
+html{
+  overflow-x: hidden;
+
+}
+.inner{
+    width: 1200px;
+    margin: auto;
+}
+
+video{
+    width: 100%;
+    height: 800px; 
+    object-fit: cover; 
+  }
+
+  h2{
+    font-size: var(--menu-size);
+    font-weight: var(--menu-weight);
+    text-align: center;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  h2::after{
+    position: absolute;
+    bottom : -40%;
+    content: "";
+    width: 62px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 6px;
+    background-color: var(--point-color2);
+  }
+
+  p{
+    text-align: center;
+  }
+
+/******* main-visual *******/
+.main-visual{
+    height: 800px;
+}
+.main-visual video{
+    position: absolute;
+    z-index: -1;
+}
+/******* quick-menu *******/
+.quick-menu{
+    margin-top: 1px;
+    margin-bottom: 3rem;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+
+}
+.quick-menu-inner{
+    position: relative;
+    height: 140px;
+}
+
+.quick-icons-wrap{
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+}
+
+.quick-icons-wrap ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-icons-wrap li{
+    width: 100%;
+    height: 140px;
+    border-left: 1px solid #ebebeb;
+}
+
+.quick-icons-wrap li:last-child{
+    border-right: 1px solid #ebebeb;
+}
+
+.quick-icons-wrap li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color : white;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    position : relative;
+  }
+  .quick-icons-wrap li a::before{
+    position: absolute;
+    top : 0%;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--point-color2);
+  }
+  .quick-icons-wrap li a::after{
+    position: absolute;
+    bottom : 0%;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--point-color2);
+
+  }
+  
+  .quick-icons{
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .trace-icon{
+    background: url("../images/icons/tracking.png") no-repeat;
+    background-size: cover;
+  }
+  .service-icon{
+    background: url("../images/icons/contract.png") no-repeat;
+    background-size: cover;
+  }
+  .invest-icon{
+    background: url("../images/icons/invest.png") no-repeat;
+    background-size: cover;
+  }
+  .webzine-icon{
+    background: url("../images/icons/magazine.png") no-repeat;
+    background-size: cover;
+  }
+  .news-icon{
+    background: url("../images/icons/news.png") no-repeat;
+    background-size: cover;
+  }
+  .job-icon{
+    background: url("../images/icons/job.png") no-repeat;
+    background-size: cover;
+  }
+    
+  .quick-icons-wrap li a:hover .quick-icons
+{
+  background-position: -48px;
+}
+
+  .quick-icons-wrap li a:hover::before,
+  .quick-icons-wrap li a:hover::after{
+    width: 50%;
+  }
+  
+  .quick-icons-text{
+    padding-top: 1rem;
+  }
+
+/******* section 01 primary-business *******/
+.primary-business {
+  width: 100%;
+  height: 600px; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background: url("../images/primary_business_container_bright.png") no-repeat center 60% / cover;
+  transition: 0.5s; 
+}
+
+.primary-business-inner {
+  width: 100%;
+  height: 600px;
+  display: flex; 
+  gap: 5px;
+
+}
+
+.biz-area {
+  height: 100%;
+  box-sizing: border-box; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  width: calc(100% / 6);
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 40%);
+
+}
+
+.biz-area:hover {
+  background-color: rgba(2, 2, 2, 60%);
+}
+
+.biz-text-container {
+  position: relative;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  
+}
+
+/* margin top을 이용해 text container에서 상단과 거리를 벌려 정렬을 맞췄다 h4, p, a(버튼). */
+.biz-text-container > h4 {
+  font-size: var(--primary-business-size);
+  color: white;
+  font-weight: 600;
+}
+
+.biz-text-container > p {
+  color: white;
+  opacity: 0;
+  font-size: 0;
+  margin: 0;
+  font-weight: 400;
+  transition: opacity 0.5s
+}
+
+.biz-text-container > p.on {
+  opacity: 1;
+  font-size: 1rem;
+  margin: 2rem;
+
+}
+
+/******* section 02 partner *******/
+.partner {
+  width : 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+.partner-inner {
+  position: relative;
+}
+
+.partner-swiper .swiper-wrapper {
+  padding: 1rem 0px;
+  /* swiper 컨테이너가 위 아래로 딱 붙지 않게 간격을 주었다. */
+}
+
+.partner-swiper-slide {
+  width: 240px;
+  height: auto;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.partner-swiper-slide > a {
+  display: block;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  margin: 0px auto;
+}
+
+.partner-swiper-slide > a > img{
+  width: 200px;
+  height: 100px;
+  
+}
+.partner-swiper-slide > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: ease-in-out 0.3s;
+}
+
+.partner-swiper-slide:hover a::after {
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.partner-swiper-button-next > span {
+  font-size: var(--h4-size);
+  color: black;
+  font-weight: bold;
+}
+
+/******* section 03 about-dongbang *******/
+.about-dongbang{
+  margin-top: 2rem;
+  height: 70vh;
+  position: relative;
+  background-image: url(../images/ship1.png);
+
+}
+
+.about-dongbang::before{
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.24);
+  width: 100%;
+  height: 100%;
+}
+
+.about-dongbang >h2{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  left: 50%;
+  top: 7%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.about-dongbang >p{
+  position: absolute;
+  left: 50%;
+  top: 21%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+}
+.about-dongbang > h2, .about-dongbang > p{
+  color: white;
+}
+
+.about-dongbang-inner{
+  height: 70vh;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  top: 4%;
+}
+
+.about-box-container > img{
+  width: 121px;
+  height: 127px;
+}
+
+.chain{
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.chain::before{
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  transform: translateY(50%);
+  background-image: url(../images/chain.svg);
+  background-repeat: no-repeat;
+  background-size: fill;
+}
+
+.about-box-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name, .num{
+  color: white;
+}
+
+.name{
+  padding-top: 1rem;
+}
+.num{
+  padding-top: 2rem;
+  font-size: var(--about-number-size);
+  font-weight: var(--about-number-weight);
+}
+/******* section 04 webzine *******/
+.webzine{
+  position: relative;
+  z-index: 10;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.webzine-inner{
+  display: grid;
+  gap: 1rem;
+  grid-template-areas: 
+  'column1 column1 news1 news1'
+  'column1 column1 news2 news3'
+  'column2 column2 news4 news5';
+
+  grid-template-rows: 200px 208px 208px; 
+
+}
+
+.webzine-box1{
+  grid-area: column1;
+}
+
+.webzine-box2{
+  grid-area: column2;
+}
+.webzine-box3{
+  grid-area: news1;
+}
+.webzine-box4{
+  grid-area: news2;
+}
+.webzine-box5{
+  grid-area: news3;
+}
+.webzine-box6{
+  grid-area: news4;
+}
+.webzine-box7{
+  grid-area: news5;
+}
+
+.webzine-box{
+  border: 1px solid #dbdbdb;
+  border-radius: 13px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s;
+
+}
+
+.webzine-box:active{
+  border: 1px solid var(--point-color2);
+}
+.webzine-imgbox1{
+  width: 100%;
+  height: 200px;
+  background-image: url(../images/webzine1.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-size: cover;
+}
+.webzine-imgbox2{
+  width: 100%;
+  height: 150px;  
+  background-image: url(../images/webzine2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 50%;
+
+
+}
+.webzine-imgbox3{
+  width: 48%;
+  height: 200px;
+  background-image: url(../images/webzine3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+.box3-flex{
+  display: flex;
+}
+.webzine-imgbox4{
+  width: 100%;
+  height: 150px;
+  background-image: url(../images/webzine4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.webzine-imgbox5{
+  width: 100%;
+  height: 150px;
+  background-image: url(../images/webzine5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.webzine-imgbox6{
+  width: 100%;
+  height: 150px;
+  background-image: url(../images/webzine6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.webzine-imgbox7{
+  width: 100%;
+  height: 150px;
+  background-image: url(../images/webzine7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 50%;
+}
+
+/* 아래는 반응형 됐을 때 탭 클릭하면 클래스 추가하는 용 */
+.webzine-inner.column-tab {
+  grid-template-areas: 
+  'column1 column1 column1 column1'
+  'column1 column1 column1 column1'
+  'column2 column2 column2 column2';
+}
+
+.webzine-inner.news-tab {
+  grid-template-areas: 
+  'news1 news1 news1 news1'
+  'news2 news2 news3 news3'
+  'news4 news4 news5 news5';
+}
+
+
+/* 웹진 폰트 사이즈 및 텍스트 박스 정렬 */
+
+.webzine-title{
+  font-size: var(--news-title-size);
+  font-weight: var(--title-weight);
+}
+
+.webzine-preview{
+  font-size: var(--news-preview-size);
+  color: var(--gray-color);
+}
+
+.webzine-preview-first{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 300px;
+  
+}
+
+.date{
+  font-size: var(--news-date-size);
+  color: var(--gray-color);
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+}
+
+.webzine-box-container{
+  position: relative;
+}
+.webzine-textbox{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.webzine-textbox-first > h4{
+  position: absolute;
+  left: 20%;
+  top: 112%;
+}
+
+.webzine-textbox-first > .webzine-preview{
+  position: absolute;
+  left: 20%;
+  bottom: -54%;
+}
+
+.webzine-textbox-first > .date{
+  position: absolute;
+  bottom: -78%;
+}
+
+.webzine-textbox-second > h4{
+  text-align: left;
+}
+
+.webzine-preview-third{
+  padding: 1rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.tablinks {
+  background-color: rgb(223, 222, 222);
+  color: white;
+  padding: 14px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 17px;
+  transition: 0.3s;
+  border-radius: 10px 10px 0 0;
+}
+
+.tab-active {
+  background-color: var(--point-color2);
+}
+
+/******* section 05 company-location *******/
+
+/******* section 06 footer *******/
+
+.footer{
+  position: relative;
+  margin-top: 2rem;
+  border-top: 1px solid #ebebeb;
+  z-index: 10;
+
+}
+.footer-inner{
+  display: grid;
+  grid-template-areas: 
+  'footer-logo info other-info'
+  'footer-logo info family-site';
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+.footer-logo{
+  grid-area: footer-logo;
+  align-self: center;
+}
+.info{
+    grid-area: info;
+}
+.info p{
+  text-align: left;
+}
+.info .small-copy{
+  font-size: var(--small-size);
+  font-weight: var(--small-weight);
+  color: var(--gray-color);
+}
+.other-info{
+    grid-area: other-info;
+    text-align: center;
+
+}
+.family-site{
+    grid-area: family-site;
+}
+
+#family-sites {
+  border: 1px solid #cccccc; 
+  border-radius: 5px;
+  background-color: #ffffff; 
+  padding: 5px;
+  color: #000000;
+}

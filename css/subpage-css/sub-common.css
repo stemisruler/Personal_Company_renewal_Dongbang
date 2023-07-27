@@ -1,0 +1,165 @@
+/* sub-visual */
+.sub-visual{
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+.sub-main-image{
+}
+.sub-main-image img{
+    filter: brightness(75%);
+}
+.sub-visual h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #EEE;
+    font-size: var(--menu-size);
+    font-weight: 800;
+}
+.sub-visual p{
+    position: absolute;
+    left: 50%;
+    top:64%;
+    transform: translateX(-50%);
+    color: #eee;
+
+
+}
+
+/* sub-visual-menu-bar */
+.sub-visual-menu-bar{
+    width: 100%;
+    text-align: center;
+    background: #1d3f90;
+
+}
+.sub-visual-menu-bar-container{}
+.sub-visual-menu-bar-container ul{
+    width: 100%;
+    margin: 0 auto;
+    padding: 18px 0;
+}
+.sub-visual-menu-bar-container ul li{
+    font-size: 17px;
+    line-height: 22px;
+    padding: 0 25px;
+    display: inline-block;
+}
+.sub-visual-menu-bar-container ul li a{
+    font-size: 17px;
+    color: rgba(255,255,255,0.7);
+}
+
+.sub-visual-menu-bar-container ul li a.active2 {
+    color: #FFFFFF;
+    font-weight: 500;
+    border-bottom: 2px solid #FFFFFF;
+}
+/* inner sub-bar */
+.sub-bar{
+    text-align: center;
+    padding: 50px 0;
+
+}
+.sub-bar h3{
+    color: #000000;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.sub-bar ul{
+}
+.sub-bar ul li{
+    display: inline-block;
+
+}
+.sub-bar ul li a{
+
+}
+
+.sub-bar ul li a span, .sub-bar ul li a i, .sub-bar ul .right-arrow {
+    color: #888888;
+    font-size: var(--small-size);
+}
+
+/* css 애니메이션 keyframes를 선언합니다. */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0; /* 처음에는 투명하게 시작 */
+      transform: translate(-50%, -50%) translateY(20px); /* Y축으로 20px 이동하여 시작 */
+    }
+    100% {
+      opacity: 1; /* 완전히 보이게 */
+      transform: translate(-50%, -50%) translateY(0); /* 원래 위치로 이동 */
+    }
+  }
+
+  /* AOS, WOW가 적용 안됐던 이유 : 걔내는 translateY를 조정하는데,
+  나는 translate -50 -50 을 이미 적용하고 있어서, Y만 조정하면 가운데 정렬이 깨진다.
+  그래서 translate -50 -50을 translate Y를 조정하기 전에 선언해놓아야 정렬이 맞춰지면서
+  애니메이션 효과를 줄 수 있다.  */
+  
+  /* 애니메이션을 적용할 태그에 클래스를 부여합니다. */
+  .sub-visual h1, .sub-visual p {
+    opacity: 0; /* 처음에는 보이지 않게 */
+    animation-name: fadeInUp; /* 위에서 선언한 애니메이션 이름 */
+    animation-duration: 0.5s; /* 애니메이션 실행 시간 */
+    animation-fill-mode: both; /* 애니메이션 시작 전과 후에 CSS 속성이 적용되도록 */
+  }
+  
+  /* 각 요소에 약간의 딜레이를 주어 순차적으로 등장하게 합니다. */
+  .sub-visual h1 {
+    animation-delay: 0;
+  }
+  
+  .sub-visual p {
+    animation-delay: 0.5s; /* p 태그는 0.5초 후에 시작 */
+  }
+  
+
+  @keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sub-visual-menu-bar ul li {
+    opacity: 0;
+    animation: slideUp 1s forwards;
+    animation-delay: 1s; /* 이전 두 애니메이션이 끝난 후에 애니메이션을 시작하도록 지연시간을 설정 */
+}
+
+.sub-bar h3 {
+    opacity: 0;
+    animation: slideUp 1s forwards;
+    animation-delay: 1.5s; /* 이전 세 애니메이션이 끝난 후에 애니메이션을 시작하도록 지연시간을 설정 */
+}
+
+.sub-bar ul {
+    opacity: 0;
+    animation: slideUp 1s forwards;
+    animation-delay: 1.7s; /* h3의 애니메이션이 끝난 후에 애니메이션을 시작하도록 지연시간을 설정 */
+}
+
+
+@media (max-width: 800px) {
+
+    .sub-visual-menu-bar-container ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+
+    .sub-visual-menu-bar-container ul li a{
+        font-size: 1rem;
+    }
+
+}

@@ -40,5 +40,18 @@
       .quick-icons-text{
         padding-top: 0.5rem;
       }
-    
+
+    /* click 아이콘 추가함 */
+    .click-plz img{
+        width: 30px;
+        height: 30px;
+        bottom:48%;
+    }
+    .click-plz img:nth-child(1){
+        left: 23%;
+    }
+    .click-plz img:nth-child(2){
+        left: 57%;
+    }
+  
 }

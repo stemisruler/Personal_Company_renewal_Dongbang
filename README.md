@@ -19,12 +19,12 @@ https://stemisruler.github.io/Personal_Company_renewal_Dongbang/
 
  
 <h1>프로젝트 제목</h1>
-<b>동방 리뉴얼 프로젝트 NOLMUG</b>
+<b>동방 리뉴얼 프로젝트</b>
 
 
-<h1>프로젝트 소개</h1>
-20대를 타겟으로 한, 음식점/ 카페-디저트점 / 핫 플레이스 (관광명소, 유명한 곳, 좋은 산책로) 추천 웹
-
+<h1>리뉴얼 기획 의도</h1>
+Ui, UX 개선
+신뢰도를 위한 관계사 슬라이드 추가
 
 <h1>프로젝트 문서 (기획 및 디자인 방법 논의, 브레인 스토밍, 기획서)</h1>
 https://docs.google.com/document/d/1qx_2Rx0_r8Zxv5-hGX5Iu_If-1NCngNqkqd-jq7Z8gQ/edit

@@ -1,5 +1,5 @@
 <div align='center'>
- <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=250&section=header&text=동방 리뉴얼 프로젝트&fontSize=80" />
+동방 리뉴얼 프로젝트
   
 https://stemisruler.github.io/Personal_Company_renewal_Dongbang/
 
